@@ -1,0 +1,87 @@
+.projectheading {
+   text-align: center; 
+   padding: 4rem 0 2rem 0;
+}
+
+.projectcontainer {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+}
+
+.projectcard {
+    background: #1a1919;
+    padding: 1.2rem 1rem;
+    border-radius: 1rem;
+    
+}
+
+.projectcard img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.projecttitle {
+    text-align: center;
+    color: azure;
+    padding: 1rem 0;
+}
+
+.prodetails{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.probtns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    
+}
+
+.probtns .btnwd{
+    padding: 0.5rem 1rem;
+    margin: 1rem 2rem;
+    text-align: center;
+
+}
+
+.btnwd {
+    padding: 12px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: rgb(248, 217, 15);
+    color: #222;
+    border: 1px solid #9b9b9b;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 1rem 0.2rem;
+    border-radius: 0.3rem;
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.btnwd-light {
+    background: transparent;
+    color: #fff;
+}
+
+.btnwd:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width:740px) {
+    .projectcontainer {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }    
+}
