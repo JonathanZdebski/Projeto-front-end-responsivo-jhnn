@@ -11,13 +11,13 @@ const ProjectCardData = [
   },
   {
     imgsrc: pro2,
-    title: "LMS/Course Website Design",
+    title: "Course Website Design",
     text: "Projetos de Exemplo",
     view: "https://github.com/JonathanZdebski",
   },
   {
     imgsrc: pro3,
-    title: "Rymo Ecommerce Design",
+    title: "Rumo Ecommerce Design",
     text: "Projetos de Exemplo",
     view: "https://github.com/JonathanZdebski",
   },
