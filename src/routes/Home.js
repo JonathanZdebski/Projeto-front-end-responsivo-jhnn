@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroImg from "../components/HeroImg";
 import Footer from "../components/Footer";
 import Work from "../components/Work";
+import BackToTopButton from "../components/BackToTopButton";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <Navbar />
       <HeroImg />
       <Work />
+      <BackToTopButton />
       <Footer />
     </div>
   );

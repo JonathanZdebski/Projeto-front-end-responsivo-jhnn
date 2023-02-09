@@ -47,5 +47,9 @@
 
 .social {
     margin-top: 1rem; 
+    align-items: center;
+    border-bottom: 5px solid #0000CD;
+    Cursor: pointer;
+    border: 0;  
 }
 
