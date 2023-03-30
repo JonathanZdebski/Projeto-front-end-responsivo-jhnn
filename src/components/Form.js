@@ -1,78 +1,78 @@
 import Styles from "../components/Form.module.css";
 import React from "react";
-import { useState } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function Form() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [assunto, setAssunto] = useState("");
-  const [message, setMessage] = useState("");
+export const Form = () => {
+  const form = useRef();
 
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    try {
-      let res = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          assunto: assunto,
-          message: message,
-        }),
-      });
 
-      const resJson = await res.json();
-      if (res.status === 200) {
-        setName("");
-        setEmail("");
-        setAssunto("");
-        setMessage("");
-      } else {
-        setMessage("Email enviado!");
-      }
-    } catch (err) {
-      console.log(err);
+    emailjs
+      .sendForm(
+        "service_zet32rm",
+        "template_c1kywm5",
+        form.current,
+        "YNgQJRZzSHe6Spfvk"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const handleSendMessage = () => {
+    const formFields = form.current.elements;
+    const isFormFilled = Array.from(formFields).every(
+      (field) => field.tagName === "BUTTON" || field.value.trim() !== ""
+    );
+    if (isFormFilled) {
+      toast.success("Seu e-mail foi enviado com sucesso!", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      setTimeout(() => {
+        window.location.reload();
+      }, 6000);
+    } else {
+      toast.error(
+        "Por favor, preencha todos os campos antes de enviar o e-mail.",
+        {
+          position: toast.POSITION.TOP_RIGHT,
+        }
+      );
     }
   };
 
   return (
     <div className={Styles.form}>
-      <form onSubmit={handleSubmit}>
+      <form ref={form} onSubmit={sendEmail}>
         <label>Nome</label>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+        <input type="text" name="user_name" required />
         <label>E-mail</label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+        <input type="email" name="user_email" required />
         <label>Assunto</label>
-        <input
-          type="Subject"
-          value={assunto}
-          onChange={(e) => setAssunto(e.target.value)}
-        />
+        <input type="Subject" name="subject" required />
         <label>Mensagem</label>
-        <textarea
-          type="description"
-          rows="6"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <button type="handleSubmit" className="btn">
+        <textarea type="description" rows="6" name="message" required />
+        <button
+          type="handleSubmit"
+          onClick={handleSendMessage}
+          className="btn"
+          required
+        >
           Enviar
         </button>
+        <ToastContainer />
       </form>
-      <div className="setMessage">{message ? <p>{}</p> : null}</div>
     </div>
   );
-}
+};
 
 export default Form;

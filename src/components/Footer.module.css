@@ -1,15 +1,16 @@
 .footer {
     width: 100%;
     padding: 6rem 0;
-    background-color: rgba(22, 22, 22, 0.8);
+    background-color: rgba(27, 27, 27, 0.8);
 }
 
 .footercontainer {
-    max-width: 1140px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px
+        max-width: 1140px;
+        margin: auto;
+        display: flex;
+        grid-gap: 40px;
+        align-items: center;
+        justify-content: space-between;
 }
 
 .left {
@@ -32,9 +33,11 @@
 .right {
     height: 100%;
     max-width: 80%;
-    display: flex;
+    display: block;
     flex-direction: column;
     padding: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .right h4 {
@@ -45,11 +48,22 @@
     margin-bottom: 1rem;
 }
 
+
 .social {
     margin-top: 1rem; 
     align-items: center;
     border-bottom: 5px solid #0000CD;
     Cursor: pointer;
     border: 0;  
+
 }
 
+@media screen and (max-width: 768px) {
+
+    .footercontainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

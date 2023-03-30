@@ -44,10 +44,7 @@ function Footer() {
           <h4>Sobre nós</h4>
           <p>
             Lorem ipsum sem scelerisque condimentum a donec arcu, eget massa
-            nisi nec molestie venenatis mi, netus placerat metus nisl purus
-            sociosqu. sit sollicitudin lorem porta egestas consectetur
-            elementum, sagittis tristique at aenean tincidunt eu, taciti id
-            molestie tortor hendrerit.
+            nisi nec molestie venenatis mi.
           </p>
           <div className={Styles.social}>
             <FaFacebook
