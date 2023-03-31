@@ -46,23 +46,29 @@ function Footer() {
             Lorem ipsum sem scelerisque condimentum a donec arcu, eget massa
             nisi nec molestie venenatis mi.
           </p>
-          <div className={Styles.social}>
-            <FaFacebook
-              size={30}
-              style={{
-                color: "#fff",
-                marginRight: "1rem",
-              }}
-            />
-            <FaTwitter
-              size={30}
-              style={{ color: "#fff", marginRight: "1rem" }}
-            />
-            <FaLinkedin
-              size={30}
-              style={{ color: "#fff", marginRight: "1rem" }}
-            />
-          </div>
+          <ul className={Styles.social}>
+            <li>
+              <FaFacebook
+                size={30}
+                style={{
+                  color: "#fff",
+                  marginRight: "0rem",
+                }}
+              />
+            </li>
+            <li>
+              <FaTwitter
+                size={30}
+                style={{ color: "#fff", marginRight: "0rem" }}
+              />
+            </li>
+            <li>
+              <FaLinkedin
+                size={30}
+                style={{ color: "#fff", marginRight: "0rem" }}
+              />
+            </li>
+          </ul>
         </div>
       </div>
     </div>
