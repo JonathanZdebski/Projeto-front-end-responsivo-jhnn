@@ -9,14 +9,11 @@ function WorkCard(props) {
       <h2 className={Styles.projecttitle}>{props.title}</h2>
       <div className={Styles.prodetails}>
         <p>{props.text}</p>
-        <div className={Styles.probtns}>
-          <NavLink to="url.com" className={Styles.btnwd}>
-            View
-          </NavLink>
-          <NavLink to={props.view} className={Styles.btnwd}>
-            Source
-          </NavLink>
-        </div>
+      </div>
+      <div className={Styles.probtns}>
+        <NavLink to={props.view} className={Styles.btnwd}>
+          Ver Projeto
+        </NavLink>
       </div>
     </div>
   );

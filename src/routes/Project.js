@@ -12,7 +12,6 @@ function Project() {
       <Navbar />
       <HImage2 heading="PROJECTS." text="Alguns dos meus trabalhos recentes" />
       <Work />
-      <PricingCard />
       <BackToTopButton />
       <Footer />
     </div>

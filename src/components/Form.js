@@ -30,6 +30,7 @@ export const Form = () => {
 
   const handleSendMessage = () => {
     const formFields = form.current.elements;
+
     const isFormFilled = Array.from(formFields).every(
       (field) => field.tagName === "BUTTON" || field.value.trim() !== ""
     );

@@ -10,7 +10,7 @@ function About() {
       <Navbar />
       <HImage2
         heading="ABOUT."
-        text="Sou um desenvolvedor amigável de Front-end."
+        text="Sou um desenvolvedor Front-end à procura de uma oportunidade."
       />
       <AboutContent />
       <Footer />

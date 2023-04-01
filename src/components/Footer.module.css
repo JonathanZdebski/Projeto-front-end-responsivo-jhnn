@@ -34,20 +34,26 @@
     height: 100%;
     max-width: 80%;
     display: block;
-    flex-direction: column;
     padding: 1rem;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.right p {
+    flex-direction: column; 
 }
 
 .right h4 {
     margin-bottom: 1rem;
+    align-items: center;
+        margin: auto;
+        width: 88%;
 }
 
 .phone h4 {
     margin-bottom: 1rem;
 }
-
 
 .social {
     margin-top: 1rem; 
@@ -79,5 +85,19 @@
         justify-content: center;
         align-items: center;
     }
-
+    .right {
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+    .right h4 {
+        align-items: center;
+        margin: auto;
+        width: 28%;
+    }
+    .social {
+        width: 50%;
+        justify-content: space-between;
+        margin-left: 4rem;
+    }
 }

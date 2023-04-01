@@ -1,11 +1,12 @@
 import Styles from "../components/Footer.module.css";
+import { Link, NavLink } from "react-router-dom";
 import React from "react";
 import {
   FaHome,
   FaPhone,
   FaMailBulk,
-  FaFacebook,
-  FaTwitter,
+  FaGithub,
+  FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
 
@@ -41,32 +42,43 @@ function Footer() {
           </div>
         </div>
         <div className={Styles.right}>
-          <h4>Sobre nós</h4>
-          <p>
-            Lorem ipsum sem scelerisque condimentum a donec arcu, eget massa
-            nisi nec molestie venenatis mi.
-          </p>
+          <Link to="/about">
+            <h4>Sobre mim</h4>
+          </Link>
+          <p></p>
           <ul className={Styles.social}>
             <li>
-              <FaFacebook
-                size={30}
-                style={{
-                  color: "#fff",
-                  marginRight: "0rem",
-                }}
-              />
+              <NavLink
+                to="https://www.linkedin.com/in/jonathan-zdebski-3589851a0/"
+                target="_blank"
+              >
+                <FaLinkedin
+                  size={30}
+                  style={{ color: "#fff", marginRight: "0rem" }}
+                />
+              </NavLink>
             </li>
             <li>
-              <FaTwitter
-                size={30}
-                style={{ color: "#fff", marginRight: "0rem" }}
-              />
+              <NavLink to="https://github.com/JonathanZdebski" target="_blank">
+                <FaGithub
+                  size={30}
+                  style={{
+                    color: "#fff",
+                    marginRight: "0rem",
+                  }}
+                />
+              </NavLink>
             </li>
             <li>
-              <FaLinkedin
-                size={30}
-                style={{ color: "#fff", marginRight: "0rem" }}
-              />
+              <NavLink
+                to="https://www.instagram.com/jonathandalalibra/"
+                target="_blank"
+              >
+                <FaInstagram
+                  size={30}
+                  style={{ color: "#fff", marginRight: "0rem" }}
+                />
+              </NavLink>
             </li>
           </ul>
         </div>

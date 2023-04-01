@@ -10,8 +10,11 @@ function AboutContent() {
       <div className={Styles.left}>
         <h1>Quem sou</h1>
         <p>
-          Sou desenvolvedor React front-end. Crio sites seguros e responsivos
-          para os meus clientes.
+          Sou entusiasta da tecnologia desde os 12 anos, sempre fascinado em
+          como os websites funcionavam, e em 2018 tive a oportunidade e entrar
+          nesse mundo fantástico da programação. Tenho muita garra e força de
+          vontade para continuar evoluindo, estudando e ganhando novas
+          experiências!
         </p>
         <Link to="/contact">
           <button className="btn">Contato</button>

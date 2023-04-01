@@ -5,21 +5,21 @@ import pro3 from "../assets/project3.png";
 const ProjectCardData = [
   {
     imgsrc: pro1,
-    title: "Ecommerce Website Design",
-    text: "Projetos de Exemplo",
-    view: "https://github.com/JonathanZdebski",
+    title: "Projeto Ecommerce",
+    text: "+Informações no projeto",
+    view: "/projeto-ecommerce-john-dala",
   },
   {
     imgsrc: pro2,
-    title: "Course Website Design",
-    text: "Projetos de Exemplo",
-    view: "https://github.com/JonathanZdebski",
+    title: "Projeto HBanks Responsivo",
+    text: "+Informações no projeto",
+    view: "/projeto-hbanks-responsivo",
   },
   {
     imgsrc: pro3,
-    title: "Rumo Ecommerce Design",
-    text: "Projetos de Exemplo",
-    view: "https://github.com/JonathanZdebski",
+    title: "Projeto Viagem Responsivo",
+    text: "+Informações no projeto",
+    view: "/projeto-viagem-responsivo",
   },
 ];
 
