@@ -10,7 +10,7 @@ function Project() {
   return (
     <div>
       <Navbar />
-      <HImage2 heading="PROJECTS." text="Alguns dos meus trabalhos recentes" />
+      <HImage2 heading="PROJECTS." text="Alguns dos meus trabalhos recentes." />
       <Work />
       <BackToTopButton />
       <Footer />

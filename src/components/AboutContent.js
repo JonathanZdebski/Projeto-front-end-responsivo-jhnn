@@ -11,7 +11,7 @@ function AboutContent() {
         <h1>Quem sou</h1>
         <p>
           Sou entusiasta da tecnologia desde os 12 anos, sempre fascinado em
-          como os websites funcionavam, e em 2018 tive a oportunidade e entrar
+          como os websites funcionavam, e em 2018 tive a oportunidade de entrar
           nesse mundo fantástico da programação. Tenho muita garra e força de
           vontade para continuar evoluindo, estudando e ganhando novas
           experiências!
