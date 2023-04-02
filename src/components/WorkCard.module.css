@@ -10,6 +10,7 @@
    background-color: rgba(27, 27, 27, 0.8);
    margin-top: 2rem;
    border-radius: 10px;
+ 
 }
 
 .projectcontainer {
@@ -26,11 +27,18 @@
     padding: 1.2rem 1rem;
     border-radius: 1rem;
     margin-top: 3rem;
+    margin-bottom: -3rem;
+
 }
 
 .projectcard img {
     width: 100%;
     border-radius: 1rem;
+    transition: transform 0.3s ease-out;
+}
+
+.projectcard img:hover {
+    transform: scale(1.4);
 }
 
 .projecttitle {
@@ -92,6 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3.5rem;
 }
 
 .btnacess {
@@ -100,7 +109,7 @@
     text-transform: uppercase;
     padding: 12px 24px;
     display: block;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     font-size: 1rem;
     text-align: center;
     border: none;
@@ -122,7 +131,7 @@
 @media screen and (max-width:740px) {
     .projectcontainer {
         max-width: 95%;
-        display: block;
+        display: grid;
         margin: auto;
         grid-template-columns: 1fr;
     }    

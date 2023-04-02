@@ -1,6 +1,7 @@
 import pro1 from "../assets/project1.png";
 import pro2 from "../assets/project2.png";
 import pro3 from "../assets/project3.png";
+import pro4 from "../assets/project4.png";
 
 const ProjectCardData = [
   {
@@ -20,6 +21,12 @@ const ProjectCardData = [
     title: "Projeto Viagem Responsivo",
     text: "+Informações no projeto",
     view: "/projeto-viagem-responsivo",
+  },
+  {
+    imgsrc: pro4,
+    title: "Projeto Portfolio Responsivo",
+    text: "+Informações no projeto",
+    view: "/projeto-portfolio-responsivo",
   },
 ];
 
