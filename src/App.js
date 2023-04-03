@@ -9,6 +9,7 @@ import ProjectTwo from "./routes/Projects/ProjectTwo";
 import ProjectThree from "./routes/Projects/ProjectThree";
 import ProjectFour from "./routes/Projects/ProjectFour";
 import { Route, Routes } from "react-router-dom";
+import ProjectFivee from "./routes/Projects/ProjectFivee";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/projeto-hbanks-responsivo" element={<ProjectTwo />} />
         <Route path="/projeto-viagem-responsivo" element={<ProjectThree />} />
         <Route path="/projeto-portfolio-responsivo" element={<ProjectFour />} />
+        <Route path="/projeto-gen-reactjs" element={<ProjectFivee />} />
       </Routes>
     </>
   );

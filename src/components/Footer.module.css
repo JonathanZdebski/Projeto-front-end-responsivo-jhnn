@@ -93,8 +93,7 @@
     }
     .right h4 {
         align-items: center;
-        margin: auto;
-        width: 28%;
+        text-align: center;
     }
     .social {
         width: 50%;
