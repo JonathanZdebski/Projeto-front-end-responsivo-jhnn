@@ -35,6 +35,16 @@ ul {
     margin: 1rem 0.2rem;
     border-radius: 0.5rem;
     transition: 0.3s;
+    
+}
+
+.btn.zap{
+    background: #1cfc6e;
+    background-image: url('./assets/WhatsApp.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    
 }
 
 .btn-light {

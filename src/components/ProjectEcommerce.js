@@ -45,13 +45,13 @@ const ProjectEcommerce = () => {
           />
         </div>
         <div>
-          <NavLink to="" className={styles.btnwd}>
+          <NavLink to="" className={`${styles.btnwd} ${styles.web}`}>
             Acessar Projeto
           </NavLink>
           <NavLink
             to="https://github.com/JonathanZdebski/Ecommerce-sanity-stripe"
             target="_blank"
-            className={styles.btnwd}
+            className={`${styles.btnwd} ${styles.github}`}
           >
             Código GitHub
           </NavLink>

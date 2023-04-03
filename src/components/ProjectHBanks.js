@@ -42,13 +42,13 @@ const ProjectHBanks = () => {
           />
         </div>
         <div>
-          <NavLink to="" className={styles.btnwd}>
+          <NavLink to="" className={`${styles.btnwd} ${styles.web}`}>
             Acessar Projeto
           </NavLink>
           <NavLink
             to="https://github.com/JonathanZdebski/Projeto-hbank-responsivo/tree/main/bank_modern_app"
             target="_blank"
-            className={styles.btnwd}
+            className={`${styles.btnwd} ${styles.github}`}
           >
             Código GitHub
           </NavLink>

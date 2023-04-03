@@ -49,6 +49,22 @@
     transition: 0.3s;
 }
 
+.btnwd.web {
+    background-image: url('../assets/web.png'); 
+    background-size: 30px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position-x: 0.3rem; 
+}
+
+.btnwd.github {
+    background-image: url('../assets/GitHub.png'); 
+    background-size: 30px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position-x: 0.3rem; 
+}
+
 .btnwd-light {
     background: transparent;
     color: #fff;

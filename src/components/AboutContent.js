@@ -19,6 +19,9 @@ function AboutContent() {
         <Link to="/contact">
           <button className="btn">Contato</button>
         </Link>
+        <Link to="https://wa.me/5542998527599" target="_blank">
+          <button className="btn zap">WhatsApp</button>
+        </Link>
       </div>
       <div className={Styles.right}>
         <div className={Styles.imagecontainer}>

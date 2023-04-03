@@ -45,13 +45,17 @@ const ProjectPortfolio = () => {
           />
         </div>
         <div>
-          <NavLink to="/" target="_blank" className={styles.btnwd}>
+          <NavLink
+            to="/"
+            target="_blank"
+            className={`${styles.btnwd} ${styles.web}`}
+          >
             Acessar Projeto
           </NavLink>
           <NavLink
             to="https://github.com/JonathanZdebski/Projeto-front-end-responsivo-jhnn"
             target="_blank"
-            className={styles.btnwd}
+            className={`${styles.btnwd} ${styles.github}`}
           >
             Código GitHub
           </NavLink>

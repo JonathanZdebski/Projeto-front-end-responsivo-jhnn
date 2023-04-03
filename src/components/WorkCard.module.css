@@ -10,7 +10,13 @@
    background-color: rgba(27, 27, 27, 0.8);
    margin-top: 2rem;
    border-radius: 10px;
- 
+}
+
+.textproject {
+   text-align: center; 
+   padding: -1rem 1rem 1rem 1rem;
+   margin-top: 2rem;
+   border-radius: 10px;
 }
 
 .projectcontainer {
@@ -135,4 +141,8 @@
         margin: auto;
         grid-template-columns: 1fr;
     }    
+    .textproject {
+        margin: 1rem;
+        margin-bottom: -1rem;
+    }
 }

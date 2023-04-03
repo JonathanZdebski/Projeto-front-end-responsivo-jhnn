@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 function Footer() {
@@ -47,6 +48,14 @@ function Footer() {
           </Link>
           <p></p>
           <ul className={Styles.social}>
+            <li>
+              <NavLink to="https://wa.me/5542998527599" target="_blank">
+                <FaWhatsapp
+                  size={30}
+                  style={{ color: "#fff", marginRight: "0rem" }}
+                />
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to="https://www.linkedin.com/in/jonathan-zdebski-3589851a0/"
