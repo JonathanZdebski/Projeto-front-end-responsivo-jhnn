@@ -45,11 +45,15 @@ const ProjectEcommerce = () => {
           />
         </div>
         <div>
-          <NavLink to="" className={`${styles.btnwd} ${styles.web}`}>
+          <NavLink
+            to="https://projeto-ecommerce-john-dala.vercel.app/"
+            target="_blank"
+            className={`${styles.btnwd} ${styles.web}`}
+          >
             Acessar Projeto
           </NavLink>
           <NavLink
-            to="https://github.com/JonathanZdebski/Ecommerce-sanity-stripe"
+            to="https://github.com/JonathanZdebski/Projeto-ecommerce-john-dala"
             target="_blank"
             className={`${styles.btnwd} ${styles.github}`}
           >
