@@ -45,11 +45,15 @@ const ProjectGen = () => {
           />
         </div>
         <div>
-          <NavLink to="" className={`${styles.btnwd} ${styles.web}`}>
+          <NavLink
+            to="https://projeto-gen.vercel.app/"
+            target="_blank"
+            className={`${styles.btnwd} ${styles.web}`}
+          >
             Acessar Projeto
           </NavLink>
           <NavLink
-            to="https://github.com/JonathanZdebski/Projeto-Gen-em-ReactJS/tree/main/projeto-gerenciador"
+            to="https://github.com/JonathanZdebski/Projeto-Gen"
             target="_blank"
             className={`${styles.btnwd} ${styles.github}`}
           >

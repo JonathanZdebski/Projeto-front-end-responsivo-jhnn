@@ -42,7 +42,11 @@ const ProjectViagem = () => {
           />
         </div>
         <div>
-          <NavLink to="" className={`${styles.btnwd} ${styles.web}`}>
+          <NavLink
+            to="https://viagem-responsive-project-jhnn.vercel.app/"
+            target="_blank"
+            className={`${styles.btnwd} ${styles.web}`}
+          >
             Acessar Projeto
           </NavLink>
           <NavLink
