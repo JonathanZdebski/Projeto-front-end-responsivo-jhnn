@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import HImage2 from "../../components/HImage2";
 import ProjectEcommerce from "../../components/ProjectEcommerce";
 import PageTitle from "../../components/PageTitle";
+import BackToTopButton from "../../components/BackToTopButton";
 
 function ProjectOne() {
   return (
@@ -12,6 +13,7 @@ function ProjectOne() {
       <Navbar />
       <HImage2 heading="PROJECTS." text="Alguns dos meus trabalhos recentes." />
       <ProjectEcommerce />
+      <BackToTopButton />
       <Footer />
     </div>
   );

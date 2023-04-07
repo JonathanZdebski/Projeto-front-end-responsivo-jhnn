@@ -4,6 +4,7 @@ import HImage2 from "../../components/HImage2";
 import Navbar from "../../components/Navbar";
 import ProjectGen from "../../components/ProjectGen";
 import PageTitle from "../../components/PageTitle";
+import BackToTopButton from "../../components/BackToTopButton";
 
 function ProjectFivee() {
   return (
@@ -12,6 +13,7 @@ function ProjectFivee() {
       <Navbar />
       <HImage2 heading="PROJECTS." text="Alguns dos meus trabalhos recentes." />
       <ProjectGen />
+      <BackToTopButton />
       <Footer />
     </div>
   );
