@@ -30,6 +30,18 @@
 
 .title p {
     padding: 1.5rem;
+    text-align: left;
+}
+
+.title .resumetext {
+    align-items: center;
+    text-align: center;
+    margin-bottom: -2.5rem;
+}
+
+.title .resumetext2 {
+    align-items: center;
+    text-align: center;
 }
 
 .btnwd {

@@ -25,9 +25,58 @@ const ProjectEcommerce = () => {
       <div className={styles.card2}>
         <div className={styles.title}>
           <h1>Projeto Ecommerce John Dala</h1>
-          <p>
+
+          <p className={styles.resumetext}>
             Projeto realizado em ReactJS, NextJS, Sanity como API backend e o
             Stripe como API de pagamento.
+            <br />
+            <br />
+            Detalhes:
+          </p>
+          <p>
+            <br />- Utilizamos o next/link no projeto que melhora o desempenho e
+            faz uso do pré-carregamento inteligente, que carrega automaticamente
+            as páginas adjacentes para que o usuário possa navegar entre elas
+            sem qualquer tempo de carregamento significativo dentre outras
+            vantagens.
+          </p>
+          <p>
+            - Utilizamos useState e o useContext na lógica do projeto para
+            facilitar a passagem de dados entre componentes e compartilhar dados
+            entre componentes sem precisar passar propriedades manualmente entre
+            cada um deles. Isso torna o código mais limpo e fácil de ler, além
+            de reduzir a complexidade do gerenciamento de estados.
+          </p>
+          <p>
+            - Utilizamos o getStaticPaths que gera dinamicamente caminhos de
+            rota estática para suas páginas, permitindo que o Next.js
+            pré-calcule e armazene em cache essas páginas, melhorando o
+            desempenho da sua aplicação. Também utilizando dados dinâmicos da
+            API do Sanity.
+          </p>
+          <p>
+            - Também utilizamos o getStaticProps que trabalha em conjunto com o
+            getStaticPaths para permitir a geração dinâmica de páginas
+            estáticas. O getStaticPaths gera caminhos de rota estática para as
+            páginas com base em dados dinâmicos, enquanto o getStaticProps busca
+            os dados necessários para cada caminho e retorna as propriedades
+            necessárias para renderizar a página correspondente.
+          </p>
+          <p>
+            - Utilizamos também o getServerSideProps que é uma função muito útil
+            no Next.js que permite buscar dados no servidor em tempo de execução
+            e passá-los como propriedades para uma página. O uso do
+            getServerSideProps pode permitir a renderização dinâmica de conteúdo
+            personalizado, acesso a dados de autenticação, flexibilidade na
+            busca de dados dinâmicos e melhorar o SEO da aplicação.
+          </p>
+          <p>
+            - Utilizamos o useEffect para setar todos os dados do carrinho na
+            página de realização de compra e setar o cache após a compra do
+            usuário. Resumindo o useEffect é uma ferramenta poderosa que ajuda a
+            tornar os componentes do React mais dinâmicos e responsivos,
+            permitindo que eles realizem ações secundárias e se adaptem às
+            mudanças no estado da aplicação.
           </p>
         </div>
         <div>

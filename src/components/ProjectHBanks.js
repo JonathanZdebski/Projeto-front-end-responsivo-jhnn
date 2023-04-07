@@ -25,7 +25,16 @@ const ProjectHBanks = () => {
       <div className={styles.card2}>
         <div className={styles.title}>
           <h1>Projeto HBanks Responsivo</h1>
-          <p>Projeto realizado em ReactJS + Vite + Tailwindss.</p>
+          <p className={styles.resumetext}>
+            Projeto realizado em ReactJS + Vite + Tailwindss.
+            <br />
+            <br />
+            Detalhes:
+          </p>
+          <p className={styles.resumetext2}>
+            <br />- Projeto sem detalhes backend, utilizamos as tecnologias
+            citadas acima com design bem trabalhado em Tailwindcss.
+          </p>
         </div>
         <div>
           <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>

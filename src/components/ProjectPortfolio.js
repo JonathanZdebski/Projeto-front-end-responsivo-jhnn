@@ -25,9 +25,56 @@ const ProjectPortfolio = () => {
       <div className={styles.card2}>
         <div className={styles.title}>
           <h1>Projeto Portfolio Responsivo</h1>
-          <p>
+          <p className={styles.resumetext}>
             Projeto realizado em ReactJS, integração com a API do YouTube e
             integração com a API do EmailJS para envio de e-mails.
+            <br />
+            <br />
+            Detalhes:
+          </p>
+          <p>
+            <br />- Utilizamos o React Router para fazer as navegações entre as
+            páginas. Permitindo gerenciar as rotas do aplicativo de maneira
+            eficiente e fácil. Isso significa que as páginas do aplicativo podem
+            ser exibidas com base no URL da página, tornando a navegação do
+            usuário mais intuitiva.
+          </p>
+          <p>
+            - Utilizamos o Hook useRef no projeto que é uma ferramenta útil para
+            manipulação de elementos DOM e para preservação de valores entre
+            renderizações em componentes funcionais do React. Ele também é
+            flexível e pode ser usado para referenciar qualquer valor mutável,
+            além de oferecer melhor desempenho em comparação com as variáveis de
+            estado do React.
+          </p>
+          <p>
+            - Utilizamos o Hook useEffect e useState para criar uma função de
+            Scrollup em três páginas com conteúdo para facilitar a usabilidade.
+            O useEffect é uma ferramenta poderosa que ajuda a tornar os
+            componentes do React mais dinâmicos e responsivos, permitindo que
+            eles realizem ações secundárias e se adaptem às mudanças no estado
+            da aplicação. E o useState é uma ferramenta útil para gerenciar o
+            estado interno de um componente funcional do React. Ele é fácil de
+            usar, flexível, garante atualizações de estado assíncronas e mantém
+            o estado apenas no escopo local do componente.
+          </p>
+          <p>
+            - Usamos a API do EmailJS para envio de emails na página de
+            contatos. Em resumo, a API EmailJS é uma solução útil para enviar
+            e-mails diretamente de um aplicativo ou site usando código
+            JavaScript. Ela oferece fácil integração, redução de trabalho,
+            segurança, personalização, escalabilidade e suporte técnico para
+            desenvolvedores.
+          </p>
+          <p>
+            - Também usamos o Toastify na página de envio de email para as
+            notificações. Em resumo, o Toastify é uma biblioteca React flexível
+            e personalizável que permite exibir notificações em um aplicativo
+            web. Ele é fácil de usar, responsivo, compatível com o React e
+            oferece uma ampla gama de recursos de personalização. Com uma
+            comunidade ativa de desenvolvedores, o Toastify é uma opção viável
+            para desenvolvedores que precisam exibir notificações em seus
+            aplicativos web.
           </p>
         </div>
         <div>
