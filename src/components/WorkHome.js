@@ -9,7 +9,7 @@ function WorkHome() {
       <h1 className={Styles.textproject}>Projetos recentes</h1>
       <div className={Styles.projectcontainer}>
         {ProjectCardData.map((project) => (
-          <div className={Styles.projectcard}>
+          <div key={project.id} className={Styles.projectcard}>
             <img src={project.imgsrc} alt="" />
             <NavLink to={project.view}>
               <h2 className={Styles.projecttitle}>{project.title}</h2>

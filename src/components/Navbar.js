@@ -19,19 +19,13 @@ function Navbar() {
       <div className={click ? styles.navmenu : styles.navmenuactive}>
         <ul className={styles.navmenu}>
           <li>
-            <Link to="/" scroll={true}>
-              Home
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/project" scrollup={0}>
-              Projetos
-            </Link>
+            <Link to="/project">Projetos</Link>
           </li>
           <li>
-            <Link to="/contact" scrollup={0}>
-              Contato
-            </Link>
+            <Link to="/contact">Contato</Link>
           </li>
           <li>
             <Link to="/about">Sobre</Link>
