@@ -75,7 +75,6 @@ const ProjectGen = () => {
           <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
           <YouTube
             videoId="dqQkpE3rkss"
-            origin="https://portfolio-jonathanzdebski.vercel.app/"
             opts={{
               height: windowWidth < 640 ? "195" : "390",
               width: windowWidth < 640 ? "320" : "640",
