@@ -26,6 +26,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "build": {
+  "contentSecurityPolicy": "frame-ancestors 'self' www.youtube.com"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
