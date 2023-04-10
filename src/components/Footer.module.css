@@ -96,8 +96,8 @@
         text-align: center;
     }
     .social {
-        width: 50%;
+        width: 100%;
         justify-content: center;
-        margin-left: 4rem;
+        align-items: center;
     }
 }

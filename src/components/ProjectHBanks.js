@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const ProjectHBanks = () => {
-  const [setPlayerId] = useState(null);
+  const [playerId, setPlayerId] = useState(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
