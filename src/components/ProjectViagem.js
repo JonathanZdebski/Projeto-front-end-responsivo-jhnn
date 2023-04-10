@@ -25,12 +25,7 @@ const ProjectViagem = () => {
       <div className={styles.card2}>
         <div className={styles.title}>
           <h1>Projeto Viagem Responsivo</h1>
-          <p className={styles.resumetext}>
-            Projeto realizado em ReactJS com formulários em JSON.
-            <br />
-            <br />
-            Detalhes:
-          </p>
+          <h3 className={styles.resumetext}>Detalhes:</h3>
           <p>
             <br />- Utilizamos o React Router para fazer as navegações entre as
             páginas. Permitindo gerenciar as rotas do aplicativo de maneira

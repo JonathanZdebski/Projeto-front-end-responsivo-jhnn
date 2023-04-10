@@ -25,14 +25,7 @@ const ProjectEcommerce = () => {
       <div className={styles.card2}>
         <div className={styles.title}>
           <h1>Projeto Ecommerce John Dala</h1>
-
-          <p className={styles.resumetext}>
-            Projeto realizado em ReactJS, NextJS, Sanity como API backend e o
-            Stripe como API de pagamento.
-            <br />
-            <br />
-            Detalhes:
-          </p>
+          <h3 className={styles.resumetext}>Detalhes:</h3>
           <p>
             <br />- Utilizamos o next/link no projeto que melhora o desempenho e
             faz uso do pré-carregamento inteligente, que carrega automaticamente

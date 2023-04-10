@@ -25,13 +25,7 @@ const ProjectGen = () => {
       <div className={styles.card2}>
         <div className={styles.title}>
           <h1>Projeto Gen</h1>
-          <p className={styles.resumetext}>
-            Projeto realizado em ReactJS utilizando API do JSON para armazenar
-            os serviços criados.
-            <br />
-            <br />
-            Detalhes:
-          </p>
+          <h3 className={styles.resumetext}>Detalhes:</h3>
           <p>
             <br />- Utilizamos o React Router para fazer as navegações entre as
             páginas. Permitindo gerenciar as rotas do aplicativo de maneira
