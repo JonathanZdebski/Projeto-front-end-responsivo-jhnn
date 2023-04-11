@@ -88,7 +88,7 @@ const ProjectDownloader = () => {
           <NavLink
             to="https://www.youtube.com/@downloadersystem2523"
             target="_blank"
-            className={`${styles.btnwd} ${styles.github}`}
+            className={`${styles.btnwd} ${styles.youtube}`}
           >
             YouTube Channel
           </NavLink>

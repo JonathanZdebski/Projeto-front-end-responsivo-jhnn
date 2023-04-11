@@ -93,6 +93,14 @@
 }
 
 .btnwd.github {
+    background-image: url('../assets/GitHub.png'); 
+    background-size: 30px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position-x: 0.3rem; 
+}
+
+.btnwd.youtube {
     background-image: url('../assets/youtube.png'); 
     background-size: 30px;
     background-position: left;
