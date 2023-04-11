@@ -52,6 +52,21 @@
     color: #fff;
 }
 
+.containerimg {
+    text-align: center;
+}
+
+.zoomimg {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 1rem;
+    transition: transform 0.3s ease-out;
+}
+.zoomimg:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
 .btnwd {
     padding: 12px 50px;
     font-size: 1rem;
@@ -78,7 +93,7 @@
 }
 
 .btnwd.github {
-    background-image: url('../assets/GitHub.png'); 
+    background-image: url('../assets/youtube.png'); 
     background-size: 30px;
     background-position: left;
     background-repeat: no-repeat;
@@ -118,6 +133,10 @@
     }
     .title .resumetext{
        margin-left: 2.7rem;
+    }
+    .zoomimg {
+        width: 100%;
+        flex-direction: column;
     }
 
 }

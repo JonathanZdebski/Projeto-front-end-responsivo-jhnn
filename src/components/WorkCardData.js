@@ -3,6 +3,7 @@ import pro2 from "../assets/project2.png";
 import pro3 from "../assets/project3.png";
 import pro4 from "../assets/project4.png";
 import pro5 from "../assets/project5.png";
+import pro6 from "../assets/project6.png";
 
 const ProjectCardData = [
   {
@@ -39,6 +40,13 @@ const ProjectCardData = [
     title: "Projeto Gen ReactJS",
     text: "Projeto realizado em ReactJS utilizando API do JSON para armazenar os serviços criados.",
     view: "/projeto-gen-reactjs",
+  },
+  {
+    id: 6,
+    imgsrc: pro6,
+    title: "Projeto Downloader System (Protótipo)",
+    text: "Projeto realizado e estruturado pelo WordPress.",
+    view: "/projeto-downloader-system",
   },
 ];
 
