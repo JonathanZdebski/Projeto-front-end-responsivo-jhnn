@@ -29,7 +29,7 @@ const ProjectDownloader = () => {
           <h3 className={styles.resumetext2}>Detalhes:</h3>
           <ul className={styles.resumetext}>
             <li style={{ listStyleType: "disc" }}>
-              O projeto Downloader System foi criado há vários anos, na época em
+              O projeto Downloader System foi criado há alguns anos, na época em
               que ainda não havia concluído a faculdade. Como mencionado na
               seção "Sobre", sempre fui fascinado por como os websites
               funcionavam e, antes de entrar nesse mundo da programação, queria
