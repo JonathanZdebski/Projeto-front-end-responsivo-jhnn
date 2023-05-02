@@ -4,6 +4,7 @@ import styles from "../components/ProjectEcommerce.module.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import zoom from "../assets/zoom.png";
+import Translate from "../components/Translate";
 
 const ProjectDownloader = () => {
   const [playerId, setPlayerId] = useState(null);
@@ -24,6 +25,7 @@ const ProjectDownloader = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
+        <Translate />
         <div className={styles.title}>
           <h1>Projeto Protótipo Downloader System</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>

@@ -7,7 +7,7 @@ function Work() {
   return (
     <div className={Styles.workcontainer}>
       <div className={Styles.h1container}>
-      <h1 className={Styles.projectheading}>Projetos</h1>
+        <h1 className={Styles.projectheading}>Projetos</h1>
       </div>
       <div className={Styles.projectcontainer}>
         {WorkCardData.map((val, ind) => {

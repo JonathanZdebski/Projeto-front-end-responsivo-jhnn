@@ -3,6 +3,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     height: 60vh;
     position: relative;
+
 }
 
 .heroimg::before {
@@ -25,6 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;;
+   
 }
 
 .heroimg h1 {

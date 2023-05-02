@@ -3,6 +3,7 @@ import YouTube from "react-youtube";
 import styles from "../components/ProjectEcommerce.module.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import Translate from "../components/Translate";
 
 const ProjectGen = () => {
   const [setPlayerId] = useState(null);
@@ -23,6 +24,7 @@ const ProjectGen = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
+        <Translate />
         <div className={styles.title}>
           <h1>Projeto Gen</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
