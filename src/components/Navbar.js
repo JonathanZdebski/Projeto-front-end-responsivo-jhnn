@@ -18,8 +18,10 @@ function Navbar() {
       </Link>
       <div className={click ? styles.navmenu : styles.navmenuactive}>
         <ul className={styles.navmenu}>
-          <li>
-            <Link to="/">Home</Link>
+          <li onClick={() => window.location.reload()}>
+            <Link to="/" onClick={() => window.location.reload()}>
+              Home
+            </Link>
           </li>
           <li>
             <Link to="/project">Projetos</Link>
