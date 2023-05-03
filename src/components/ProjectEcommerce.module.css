@@ -17,7 +17,6 @@
     padding: 3.5rem;
     padding-top: 2rem;
     margin-bottom: -4rem;
-
 }
 
 .apres { 
@@ -117,6 +116,11 @@
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     transition: 0.3s;
+}
+
+.Link {
+    font-weight: 800;
+    text-decoration: underline;
 }
 
 @media screen and (max-width:840px) { 

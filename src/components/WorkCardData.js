@@ -4,6 +4,7 @@ import pro3 from "../assets/project3.png";
 import pro4 from "../assets/project4.png";
 import pro5 from "../assets/project5.png";
 import pro6 from "../assets/project6.png";
+import pro7 from "../assets/project7.png";
 
 const ProjectCardData = [
   {
@@ -47,6 +48,13 @@ const ProjectCardData = [
     title: "Projeto Downloader System (Protótipo)",
     text: "Projeto realizado e estruturado pelo WordPress.",
     view: "/projeto-downloader-system",
+  },
+  {
+    id: 7,
+    imgsrc: pro7,
+    title: "Projeto Downloader System em NEXTJS",
+    text: "Projeto realizado em NextJS, dados em Data e API do EmailJS.",
+    view: "/projeto-downloader-system-nextjs",
   },
 ];
 

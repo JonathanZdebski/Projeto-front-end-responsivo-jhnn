@@ -11,6 +11,7 @@ import ProjectFour from "./routes/Projects/ProjectFour";
 import { Route, Routes } from "react-router-dom";
 import ProjectFivee from "./routes/Projects/ProjectFivee";
 import ProjectSix from "./routes/Projects/ProjectSix";
+import ProjectSeven from "./routes/Projects/ProjectSeven";
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
         <Route path="/projeto-portfolio-responsivo" element={<ProjectFour />} />
         <Route path="/projeto-gen-reactjs" element={<ProjectFivee />} />
         <Route path="/projeto-downloader-system" element={<ProjectSix />} />
+        <Route
+          path="/projeto-downloader-system-nextjs"
+          element={<ProjectSeven />}
+        />
       </Routes>
     </>
   );
