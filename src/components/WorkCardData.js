@@ -9,17 +9,17 @@ import pro7 from "../assets/project7.png";
 const ProjectCardData = [
   {
     id: 1,
+    imgsrc: pro7,
+    title: "Projeto Downloader System em NEXTJS",
+    text: "Projeto realizado em NextJS, dados em Data e API do EmailJS.",
+    view: "/projeto-downloader-system-nextjs",
+  },
+  {
+    id: 2,
     imgsrc: pro1,
     title: "Projeto Ecommerce",
     text: "Projeto realizado em ReactJS, NextJS, Sanity como API backend e o Stripe como API de pagamento.",
     view: "/projeto-ecommerce-john-dala",
-  },
-  {
-    id: 2,
-    imgsrc: pro2,
-    title: "Projeto HBanks Responsivo",
-    text: "Projeto realizado em ReactJS + Vite + Tailwindss.",
-    view: "/projeto-hbanks-responsivo",
   },
   {
     id: 3,
@@ -35,13 +35,15 @@ const ProjectCardData = [
     text: "Projeto realizado em ReactJS, integração com a API do YouTube e integração com a API do EmailJS para envio de e-mails.",
     view: "/projeto-portfolio-responsivo",
   },
+
   {
     id: 5,
-    imgsrc: pro5,
-    title: "Projeto Gen ReactJS",
-    text: "Projeto realizado em ReactJS utilizando API do JSON para armazenar os serviços criados.",
-    view: "/projeto-gen-reactjs",
+    imgsrc: pro2,
+    title: "Projeto HBanks Responsivo",
+    text: "Projeto realizado em ReactJS + Vite + Tailwindss.",
+    view: "/projeto-hbanks-responsivo",
   },
+
   {
     id: 6,
     imgsrc: pro6,
@@ -49,12 +51,13 @@ const ProjectCardData = [
     text: "Projeto realizado e estruturado pelo WordPress.",
     view: "/projeto-downloader-system",
   },
+
   {
     id: 7,
-    imgsrc: pro7,
-    title: "Projeto Downloader System em NEXTJS",
-    text: "Projeto realizado em NextJS, dados em Data e API do EmailJS.",
-    view: "/projeto-downloader-system-nextjs",
+    imgsrc: pro5,
+    title: "Projeto Gen ReactJS",
+    text: "Projeto realizado em ReactJS utilizando API do JSON para armazenar os serviços criados.",
+    view: "/projeto-gen-reactjs",
   },
 ];
 

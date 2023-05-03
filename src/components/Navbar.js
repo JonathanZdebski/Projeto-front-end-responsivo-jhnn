@@ -12,16 +12,14 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={styles.header}>
+    <div className={styles.header} onClick={() => window.location.reload()}>
       <Link to="/">
         <h1>JHNN</h1>
       </Link>
       <div className={click ? styles.navmenu : styles.navmenuactive}>
         <ul className={styles.navmenu}>
           <li onClick={() => window.location.reload()}>
-            <Link to="/" onClick={() => window.location.reload()}>
-              Home
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/project">Projetos</Link>
