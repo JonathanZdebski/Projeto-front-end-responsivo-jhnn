@@ -12,10 +12,10 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={styles.header} onClick={() => window.location.reload()}>
-      <Link to="/">
+    <div className={styles.header}>
+      <a href="/">
         <h1>JHNN</h1>
-      </Link>
+      </a>
       <div className={click ? styles.navmenu : styles.navmenuactive}>
         <ul className={styles.navmenu}>
           <li onClick={() => window.location.reload()}>
