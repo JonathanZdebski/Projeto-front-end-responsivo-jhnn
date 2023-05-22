@@ -11,7 +11,7 @@ const ProjectCardData = [
     id: 1,
     imgsrc: pro7,
     title: "Projeto Downloader System em NEXTJS",
-    text: "Projeto realizado em NextJS, dados em Data e API do EmailJS.",
+    text: "Projeto realizado em NextJS e suas tecnologias, com dados em JSON e API do EmailJS.",
     view: "/projeto-downloader-system-nextjs",
   },
   {

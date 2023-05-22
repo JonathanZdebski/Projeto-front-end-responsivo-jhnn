@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "../components/Navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
+import jhnnlogo from "../assets/jhnnlogo.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -14,7 +15,7 @@ function Navbar() {
   return (
     <div className={styles.header}>
       <a href="/">
-        <h1>JHNN</h1>
+        <img className="imglogo" alt="jhn" src={jhnnlogo} />
       </a>
       <div className={click ? styles.navmenu : styles.navmenuactive}>
         <ul className={styles.navmenu}>
