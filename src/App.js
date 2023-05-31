@@ -12,6 +12,8 @@ import { Route, Routes } from "react-router-dom";
 import ProjectFivee from "./routes/Projects/ProjectFivee";
 import ProjectSix from "./routes/Projects/ProjectSix";
 import ProjectSeven from "./routes/Projects/ProjectSeven";
+import ProjectEight from "./routes/Projects/ProjectEight";
+import ProjectNine from "./routes/Projects/ProjectNine";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           path="/projeto-downloader-system-nextjs"
           element={<ProjectSeven />}
         />
+        <Route path="/projeto-poke-next" element={<ProjectEight />} />
+        <Route path="/projeto-prompts-full-stack" element={<ProjectNine />} />
       </Routes>
     </>
   );

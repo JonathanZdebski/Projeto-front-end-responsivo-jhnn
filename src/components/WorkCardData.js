@@ -2,9 +2,11 @@ import pro1 from "../assets/project1.png";
 import pro2 from "../assets/project2.png";
 import pro3 from "../assets/project3.png";
 import pro4 from "../assets/project4.png";
+import pokenxt from "../assets/pokenxt.png";
 import pro5 from "../assets/project5.png";
 import pro6 from "../assets/project6.png";
 import pro7 from "../assets/project7.png";
+import prompts from "../assets/prompts.png";
 
 const ProjectCardData = [
   {
@@ -23,17 +25,17 @@ const ProjectCardData = [
   },
   {
     id: 3,
-    imgsrc: pro3,
-    title: "Projeto Viagem Responsivo",
-    text: "Projeto realizado em ReactJS com formulários em JSON.",
-    view: "/projeto-viagem-responsivo",
+    imgsrc: prompts,
+    title: "Projeto Prompts Full-Stack",
+    text: "Projeto realizado em NextJS com integração do autenticador do Google, dados em MongoDB e sistema CRUD.",
+    view: "/projeto-prompts-full-stack",
   },
   {
     id: 4,
-    imgsrc: pro4,
-    title: "Projeto Portfolio Responsivo",
-    text: "Projeto realizado em ReactJS, integração com a API do YouTube e integração com a API do EmailJS para envio de e-mails.",
-    view: "/projeto-portfolio-responsivo",
+    imgsrc: pokenxt,
+    title: "Projeto PokeNext",
+    text: "Projeto realizado em NextJS para fins de estudos com API externa integrada buscando dados externos.",
+    view: "/projeto-poke-next",
   },
 
   {
@@ -54,6 +56,20 @@ const ProjectCardData = [
 
   {
     id: 7,
+    imgsrc: pro4,
+    title: "Projeto Portfolio Responsivo",
+    text: "Projeto realizado em ReactJS, integração com a API do YouTube e integração com a API do EmailJS para envio de e-mails.",
+    view: "/projeto-portfolio-responsivo",
+  },
+  {
+    id: 8,
+    imgsrc: pro3,
+    title: "Projeto Viagem Responsivo",
+    text: "Projeto realizado em ReactJS com formulários em JSON.",
+    view: "/projeto-viagem-responsivo",
+  },
+  {
+    id: 9,
     imgsrc: pro5,
     title: "Projeto Gen ReactJS",
     text: "Projeto realizado em ReactJS utilizando API do JSON para armazenar os serviços criados.",
