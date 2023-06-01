@@ -1,11 +1,27 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import styles from "../components/ProjectEcommerce.module.css";
 import { NavLink } from "react-router-dom";
 import Translate from "../components/Translate";
-import prompts from "../assets/prompts.png";
+import YouTube from "react-youtube";
 import { Link } from "react-router-dom";
 
 const ProjectEcommerce = () => {
+  const [setPlayerId] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const onReady = (event) => {
+    setPlayerId(event.target.getIframe().id);
+  };
+
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
@@ -90,12 +106,20 @@ const ProjectEcommerce = () => {
               componente do seu site.
             </li>
           </ul>
-          <div className={styles.containerimg}>
-            <img
-              className={styles.zoomimg}
-              src={prompts}
-              alt="prompts"
-              width={600}
+          <div>
+            <br />
+            <br />
+            <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
+            <YouTube
+              videoId="OcTpCrCLzbM"
+              opts={{
+                height: windowWidth < 640 ? "195" : "390",
+                width: windowWidth < 640 ? "320" : "640",
+                playerVars: {
+                  autoplay: 0,
+                },
+              }}
+              onReady={onReady}
             />
           </div>
         </div>
