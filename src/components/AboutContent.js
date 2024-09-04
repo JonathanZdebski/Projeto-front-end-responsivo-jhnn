@@ -10,10 +10,10 @@ function AboutContent() {
       <div className={Styles.left}>
         <h1>Quem sou</h1>
         <p>
-          Sou entusiasta da tecnologia desde os 12 anos, sempre fascinado em
-          como os websites funcionavam, e em 2018 tive a oportunidade de entrar
+          Sou entusiasta da tecnologia desde os 12 anos, sempre fascinado por
+          como os websites funcionavam. Em 2018, tive a oportunidade de entrar
           nesse mundo fantástico da programação. Tenho muita garra e força de
-          vontade para continuar evoluindo, estudando e ganhando novas
+          vontade para continuar evoluindo, estudando e adquirindo novas
           experiências!
         </p>
         <Link to="/contact">

@@ -6,6 +6,7 @@
     justify-content: center;
     flex-wrap: wrap;
     height: 100%;
+
 }
 
 .about .left {
@@ -20,6 +21,7 @@
     margin: 1.5rem 0;
     text-align: center;
     color: white;
+    text-align: left;
 }
 
 .about .right right{

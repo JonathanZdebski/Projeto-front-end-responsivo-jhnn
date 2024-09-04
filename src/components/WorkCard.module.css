@@ -26,7 +26,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem
 }
 
 .projectcard {
@@ -35,8 +35,16 @@
     border-radius: 1rem;
     margin-top: 3rem;
     margin-bottom: -3rem;
-
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Efeito de sombra */
+    transition: all 0.4s ease; /* Transição suave para o efeito hover */
 }
+
+.projectcard:hover {
+    border-color: #00a8c5; /* Cor da borda ao passar o mouse */
+    box-shadow: 0 0 15px rgba(0, 108, 122, 0.897); /* Efeito de sombra ao passar o mouse */
+    transform: translateY(-5px); /* Elevação do card ao passar o mouse */
+}
+
 
 .projectcard img {
     width: 100%;
@@ -45,7 +53,7 @@
 }
 
 .projectcard img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .projecttitle {

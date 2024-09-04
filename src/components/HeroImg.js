@@ -1,13 +1,13 @@
 import Styles from "../components/HeroImg.module.css";
 import React from "react";
-import IntroImg from "../assets/intro-bg.jpg";
+import coding from "../assets/codingone.png";
 import { Link } from "react-router-dom";
 
 function HeroImg() {
   return (
     <div className={Styles.hero}>
       <div className={Styles.mask}>
-        <img className={Styles.intoimg} src={IntroImg} alt="IntroImg" />
+        <img className={Styles.intoimg} src={coding} alt="IntroImg" />
       </div>
       <div className={Styles.content}>
         <p>OLÁ, MEU NOME É JONATHAN</p>

@@ -9,7 +9,18 @@ function Navbar() {
   const handleClick = () => setClick(!click);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const handleScroll = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    handleScroll(); // Chama a função de scroll suave
+
+    // Adiciona um ouvinte para navegação, se aplicável
+    window.addEventListener("popstate", handleScroll);
+
+    return () => {
+      window.removeEventListener("popstate", handleScroll);
+    };
   }, []);
 
   return (

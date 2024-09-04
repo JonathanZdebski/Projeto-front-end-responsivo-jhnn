@@ -14,6 +14,9 @@ import ProjectSix from "./routes/Projects/ProjectSix";
 import ProjectSeven from "./routes/Projects/ProjectSeven";
 import ProjectEight from "./routes/Projects/ProjectEight";
 import ProjectNine from "./routes/Projects/ProjectNine";
+import ProjectCarHubA from "./routes/Projects/ProjectCarHub";
+import ProjectNewTabA from "./routes/Projects/ProjectNewTab";
+import UploadFilesDS from "./routes/Projects/ProjectUploadFilesDS";
 
 function App() {
   return (
@@ -35,6 +38,9 @@ function App() {
         />
         <Route path="/projeto-poke-next" element={<ProjectEight />} />
         <Route path="/projeto-prompts-full-stack" element={<ProjectNine />} />
+        <Route path="/projeto-carhub" element={<ProjectCarHubA />} />
+        <Route path="/projeto-newtab" element={<ProjectNewTabA />} />
+        <Route path="/projeto-uploadfilesds" element={<UploadFilesDS />} />
       </Routes>
     </>
   );
