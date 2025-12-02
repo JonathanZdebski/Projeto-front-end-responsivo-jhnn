@@ -48,6 +48,17 @@ const ProjectEdicaoDireta = () => {
             </li>
             <br />
             <li style={{ listStyleType: "disc" }}>
+              <strong>NextAuth v5:</strong>
+              <ul>
+                <li>
+                  Biblioteca de autenticação para Next.js que oferece suporte a
+                  múltiplos provedores de autenticação e uma solução de sessão
+                  robusta, simplificando a gestão de usuários e autenticação.
+                </li>
+                <br />
+              </ul>
+            </li>
+            <li style={{ listStyleType: "disc" }}>
               <strong>Shadcn/UI:</strong> <br />
               Biblioteca de componentes moderna e altamente personalizável para
               React e Next.js. Oferece componentes acessíveis, estilizados com
@@ -71,14 +82,6 @@ const ProjectEdicaoDireta = () => {
               tempo real, Firestore, hosting e storage. Ideal para aplicativos
               modernos que precisam escalar rápido sem infraestrutura própria,
               mantendo simplicidade no back-end.
-            </li>
-            <br />
-
-            <li style={{ listStyleType: "disc" }}>
-              <strong>NextAuth v5:</strong> <br />
-              Biblioteca de autenticação para Next.js que oferece suporte a
-              múltiplos provedores de autenticação e uma solução de sessão
-              robusta, simplificando a gestão de usuários e autenticação.
             </li>
             <br />
 

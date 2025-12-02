@@ -16,14 +16,14 @@ const ProjectCardData = [
     id: 13,
     imgsrc: okr,
     title: "Projeto SaaS OKR Planner",
-    text: "Tecnologias: Next.js, Typescript, Supabase, TailWindCSS, Framer-motion, Google Search Console SEO, Shadcn/UI, Stripe Payments",
+    text: "Tecnologias: Next.js, Typescript, Supabase, TailWindCSS, NextAuth v5, Framer-motion, Google Search Console SEO, Shadcn/UI, Stripe Payments",
     view: "/projeto-okr-planner",
   },
   {
     id: 12,
     imgsrc: ed,
     title: "Projeto SaaS Edição Direta",
-    text: "Tecnologias: Next.js, Typescript, Firebase, TailWindCSS, Google Search Console SEO, Shadcn/UI",
+    text: "Tecnologias: Next.js, Typescript, Firebase, TailWindCSS, NextAuth v5, Google Search Console SEO, Shadcn/UI",
     view: "/projeto-edicao-direta",
   },
   {
