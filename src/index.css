@@ -1,69 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Outfit', sans-serif;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 h1,
 h4,
 p,
-a{
-    color: #fff;
-    text-decoration: none;
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-li{
-    font-size: 1.1rem;
+li {
+  font-size: 1.1rem;
 }
 
 .btn {
-    padding: 12px 32px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    background: rgb(248, 217, 15);
-    color: #222;
-    border: 1px solid #fff;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 1rem 0.2rem;
-    border-radius: 0.5rem;
-    transition: 0.3s;
-    
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(86, 216, 255);
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1rem 0.2rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
 }
 
-.btn.zap{
-    background: #1cfc6e;
-    background-image: url('./assets/WhatsApp.png');
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: left;
-    
+.btn.zap {
+  background: #1cfc6e;
+  background-image: url("./assets/WhatsApp.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .btn-light {
-    background: transparent;
-    color: #fff;
+  background: transparent;
+  color: #fff;
 }
 
 .btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    transition: 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
 }
 
 .imglogo {
-    width: 100px;
+  width: 100px;
 }
-

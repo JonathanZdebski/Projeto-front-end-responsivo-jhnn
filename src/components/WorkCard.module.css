@@ -1,157 +1,153 @@
 .h1container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectheading {
-   text-align: center; 
-   padding: 0.5rem 1rem 1rem 1rem;
-   background-color: rgba(27, 27, 27, 0.8);
-   margin: 2rem;
-   border-radius: 10px;
-   margin-bottom: -0.5rem;
+  text-align: center;
+  padding: 0.5rem 1rem 1rem 1rem;
+  background-color: rgba(27, 27, 27, 0.8);
+  margin: 2rem;
+  border-radius: 10px;
+  margin-bottom: -0.5rem;
 }
 
 .textproject {
-   text-align: center; 
-   padding: -1rem 1rem 1rem 1rem;
-   margin-top: 2rem;
-   border-radius: 10px;
+  text-align: center;
+  padding: -1rem 1rem 1rem 1rem;
+  margin-top: 2rem;
+  border-radius: 10px;
 }
 
 .projectcontainer {
-    max-width: 1140px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    padding-bottom: 2rem
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding-bottom: 2rem;
 }
 
 .projectcard {
-    background-color: rgba(63, 63, 63, 0.274);
-    padding: 1.2rem 1rem;
-    border-radius: 1rem;
-    margin-top: 3rem;
-    margin-bottom: -3rem;
-    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Efeito de sombra */
-    transition: all 0.4s ease; /* Transição suave para o efeito hover */
+  background-color: rgba(63, 63, 63, 0.274);
+  padding: 1.2rem 1rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-bottom: -3rem;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Efeito de sombra */
+  transition: all 0.4s ease; /* Transição suave para o efeito hover */
 }
 
 .projectcard:hover {
-    border-color: #00a8c5; /* Cor da borda ao passar o mouse */
-    box-shadow: 0 0 15px rgba(0, 108, 122, 0.897); /* Efeito de sombra ao passar o mouse */
-    transform: translateY(-5px); /* Elevação do card ao passar o mouse */
+  border-color: #00a8c5; /* Cor da borda ao passar o mouse */
+  box-shadow: 0 0 15px rgba(0, 108, 122, 0.897); /* Efeito de sombra ao passar o mouse */
+  transform: translateY(-5px); /* Elevação do card ao passar o mouse */
 }
 
-
 .projectcard img {
-    width: 100%;
-    border-radius: 1rem;
-    transition: transform 0.3s ease-out;
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-out;
 }
 
 .projectcard img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .projecttitle {
-    text-align: center;
-    color: azure;
-    padding: 1rem 0;
+  text-align: center;
+  color: azure;
+  padding: 1rem 0;
 }
 
-.prodetails{
-    padding-bottom: 1rem;
-    font-size: 1.1rem;
-    text-align: center;
-
+.prodetails {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .probtns {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
 }
 
-.probtns .btnwd{
-    padding: 0.5rem 1rem;
-    margin: 1rem 5rem;
-    text-align: center;
-    
+.probtns .btnwd {
+  padding: 0.5rem 1rem;
+  margin: 1rem 5rem;
+  text-align: center;
 }
 
 .btnwd {
-    padding: 12px 50px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    background: rgb(248, 217, 15);
-    color: #222;
-    border: 1px solid #9b9b9b;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 2rem 0.2rem;
-    border-radius: 0.3rem;
-    display: block;
-    width: 50%;
-    margin: 0.5rem 0;
-    transition: 0.3s;
+  padding: 12px 50px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(86, 216, 255);
+  color: #222;
+  border: 1px solid #9b9b9b;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 2rem 0.2rem;
+  border-radius: 0.3rem;
+  display: block;
+  width: 50%;
+  margin: 0.5rem 0;
+  transition: 0.3s;
 }
 
 .btnwd-light {
-    background: transparent;
-    color: #fff;
-    transition: 0.3s;
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
 }
 
 .btnwd:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    transition: 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
 }
 
 .btnacesscontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
 }
 
 .btnacess {
-    color: #000000;
-    background-color: rgb(248, 217, 15);
-    text-transform: uppercase;
-    padding: 12px 24px;
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 0.3rem;
-    border: 1px solid #9b9b9b;
-    transition: 0.3s;
+  color: #000000;
+  background: rgb(86, 216, 255);
+  text-transform: uppercase;
+  padding: 12px 24px;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  border: 1px solid #9b9b9b;
+  transition: 0.3s;
 }
 
 .btnacess:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    transition: 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
 }
 
-
-@media screen and (max-width:740px) {
-    .projectcontainer {
-        max-width: 95%;
-        display: grid;
-        margin: auto;
-        grid-template-columns: 1fr;
-    }    
-    .textproject {
-        margin: 1rem;
-        margin-bottom: -1rem;
-    }
+@media screen and (max-width: 740px) {
+  .projectcontainer {
+    max-width: 95%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+  .textproject {
+    margin: 1rem;
+    margin-bottom: -1rem;
+  }
 }

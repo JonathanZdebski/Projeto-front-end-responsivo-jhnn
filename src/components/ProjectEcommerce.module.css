@@ -1,156 +1,153 @@
 .card {
-    text-align: center; 
-    width: 100%;
-    padding: 2rem 0 2rem 0; 
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0 2rem 0;
 }
 
 .card2 {
-    background-color: rgba(63, 63, 63, 0.274);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    flex-direction: column;
-    margin: auto;
-    max-width: 1140px;
-    grid-gap: 40px;
-    border-radius: 1rem;
-    padding: 3.5rem;
-    padding-top: 2rem;
-    margin-bottom: -4rem;
-    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Efeito de sombra */
-    transition: box-shadow 0.3s ease; /* Transição suave para o efeito de sombra */
+  background-color: rgba(63, 63, 63, 0.274);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1140px;
+  grid-gap: 40px;
+  border-radius: 1rem;
+  padding: 3.5rem;
+  padding-top: 2rem;
+  margin-bottom: -4rem;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Efeito de sombra */
+  transition: box-shadow 0.3s ease; /* Transição suave para o efeito de sombra */
 }
 
-.apres { 
-    color: aliceblue;
-    margin-top: -20px;
+.apres {
+  color: aliceblue;
+  margin-top: -20px;
 }
 
-.title h1{
-    text-align: center;
+.title h1 {
+  text-align: center;
 }
 
 .title p {
-    padding: 1.5rem;
-    text-align: left;
+  padding: 1.5rem;
+  text-align: left;
 }
 
-.title .resumetext{
-    align-items: center;
-    text-align: left;
-    margin: 5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #fff;
-    margin-right: 2.5rem;
+.title .resumetext {
+  align-items: center;
+  text-align: left;
+  margin: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  margin-right: 2.5rem;
 }
 
 .title .resumetext2 {
-    align-items: center;
-    text-align: center;
-    margin: 1.5rem;
-    margin-bottom: 2.5rem;
-    color: #fff;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
 }
 
 .containerimg {
-    text-align: center;
+  text-align: center;
 }
 
 .zoomimg {
-    text-align: center;
-    border-radius: 20px;
-    margin-top: 1rem;
-    transition: transform 0.3s ease-out;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 1rem;
+  transition: transform 0.3s ease-out;
 }
 .zoomimg:hover {
-    transition: 0.3s;
-    transform: scale(1.1);
+  transition: 0.3s;
+  transform: scale(1.1);
 }
 
 .btnwd {
-    padding: 12px 50px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    background: rgb(248, 217, 15);
-    color: #222;
-    border: 1px solid #9b9b9b;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 1rem 0.2rem;
-    border-radius: 0.3rem;
-    display: inline;
-    width: 20%;
-    margin: 1rem 3em;
-    transition: 0.3s;
+  padding: 12px 50px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(86, 216, 255);
+  color: #222;
+  border: 1px solid #9b9b9b;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1rem 0.2rem;
+  border-radius: 0.3rem;
+  display: inline;
+  width: 20%;
+  margin: 1rem 3em;
+  transition: 0.3s;
 }
 
 .btnwd.web {
-    background-image: url('../assets/web.png'); 
-    background-size: 30px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-position-x: 0.3rem; 
+  background-image: url("../assets/web.png");
+  background-size: 30px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position-x: 0.3rem;
 }
 
 .btnwd.github {
-    background-image: url('../assets/GitHub.png'); 
-    background-size: 30px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-position-x: 0.3rem; 
+  background-image: url("../assets/GitHub.png");
+  background-size: 30px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position-x: 0.3rem;
 }
 
 .btnwd.youtube {
-    background-image: url('../assets/youtube.png'); 
-    background-size: 30px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-position-x: 0.3rem; 
+  background-image: url("../assets/youtube.png");
+  background-size: 30px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position-x: 0.3rem;
 }
 
 .btnwd-light {
-    background: transparent;
-    color: #fff;
+  background: transparent;
+  color: #fff;
 }
 
 .btnwd:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-    transition: 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
 }
 
 .Link {
-    font-weight: 800;
-    text-decoration: underline;
+  font-weight: 800;
+  text-decoration: underline;
 }
 
-@media screen and (max-width:840px) { 
-
-    .card2 {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        align-items: center;
-
-    }
-    .btnwd {
-        display: flex;
-        flex-direction: column;  
-        padding: 5px 6.9rem;
-        align-items: center;
-        margin: 1rem;
-        margin-left: 5.5rem;
-    }
-    .card2 h3 {
-        font-size: medium;
-    }
-    .title .resumetext{
-       margin-left: 2.7rem;
-    }
-    .zoomimg {
-        width: 90%;
-        flex-direction: column;
-    }
-
+@media screen and (max-width: 840px) {
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+  .btnwd {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 6.9rem;
+    align-items: center;
+    margin: 1rem;
+    margin-left: 5.5rem;
+  }
+  .card2 h3 {
+    font-size: medium;
+  }
+  .title .resumetext {
+    margin-left: 2.7rem;
+  }
+  .zoomimg {
+    width: 90%;
+    flex-direction: column;
+  }
 }
