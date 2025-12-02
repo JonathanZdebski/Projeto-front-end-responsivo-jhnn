@@ -2,6 +2,9 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -27,8 +30,8 @@
     "eject": "react-scripts eject"
   },
   "build": {
-  "contentSecurityPolicy": "frame-ancestors 'self' www.youtube.com"
-},
+    "contentSecurityPolicy": "frame-ancestors 'self' www.youtube.com"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

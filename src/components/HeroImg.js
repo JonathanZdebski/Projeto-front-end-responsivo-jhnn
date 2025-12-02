@@ -1,5 +1,4 @@
 import Styles from "../components/HeroImg.module.css";
-import React from "react";
 import coding from "../assets/codingone.png";
 import { Link } from "react-router-dom";
 
@@ -15,6 +14,7 @@ function HeroImg() {
           Desenvolvedor Front-end Jr com experiência em React.js, Next.js,
           TypeScript e boas práticas de UI/UX.
         </h1>
+
         <div>
           <Link to="/project" className="btn">
             Projetos
