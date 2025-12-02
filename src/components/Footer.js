@@ -13,86 +13,80 @@ import {
 
 function Footer() {
   return (
-    <div className={Styles.footer}>
-      <div className={Styles.footercontainer}>
-        <div className={Styles.left}>
-          <div className={Styles.location}>
-            <FaHome size={20} style={{ color: "#fff", marginRight: "2rem" }} />
-            <div>
-              <p>Ponta Grossa, PR.</p>
-              <p>Brasil.</p>
-            </div>
+    <footer className={Styles.footer}>
+      <div className={Styles.container}>
+        {/* INFO */}
+        <div className={Styles.col}>
+          <h3 className={Styles.title}>Contato</h3>
+
+          <div className={Styles.item}>
+            <FaHome className={Styles.icon} />
+            <p>
+              Ponta Grossa, PR
+              <br />
+              Brasil
+            </p>
           </div>
-          <div className={Styles.phone}>
-            <h4>
-              <FaPhone
-                size={20}
-                style={{ color: "#fff", marginRight: "2rem" }}
-              />
-              (55)42 99852-7599
-            </h4>
+
+          <div className={Styles.item}>
+            <FaPhone className={Styles.icon} />
+            <p>(55) 42 99852-7599</p>
           </div>
-          <div className={Styles.email}>
-            <h4>
-              <FaMailBulk
-                size={20}
-                style={{ color: "#fff", marginRight: "2rem" }}
-              />
-              jonathanzdebski@yahoo.com
-            </h4>
+
+          <div className={Styles.item}>
+            <FaMailBulk className={Styles.icon} />
+            <p>jonathanzdebski@yahoo.com</p>
           </div>
         </div>
-        <div className={Styles.right}>
-          <Link to="/about">
-            <h4>Sobre mim</h4>
-          </Link>
-          <p></p>
-          <ul className={Styles.social}>
+
+        {/* LINKS */}
+        <div className={Styles.col}>
+          <h3 className={Styles.title}>Navegação</h3>
+          <ul className={Styles.links}>
             <li>
-              <NavLink to="https://wa.me/5542998527599" target="_blank">
-                <FaWhatsapp
-                  size={30}
-                  style={{ color: "#fff", marginRight: "0rem" }}
-                />
-              </NavLink>
+              <Link to="/about">Sobre mim</Link>
             </li>
             <li>
-              <NavLink
-                to="https://www.linkedin.com/in/jonathan-zdebski-3589851a0/"
-                target="_blank"
-              >
-                <FaLinkedin
-                  size={30}
-                  style={{ color: "#fff", marginRight: "0rem" }}
-                />
-              </NavLink>
+              <Link to="/project">Projetos</Link>
             </li>
             <li>
-              <NavLink to="https://github.com/JonathanZdebski" target="_blank">
-                <FaGithub
-                  size={30}
-                  style={{
-                    color: "#fff",
-                    marginRight: "0rem",
-                  }}
-                />
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="https://www.instagram.com/jonathandalalibra/"
-                target="_blank"
-              >
-                <FaInstagram
-                  size={30}
-                  style={{ color: "#fff", marginRight: "0rem" }}
-                />
-              </NavLink>
+              <Link to="/contact">Contato</Link>
             </li>
           </ul>
         </div>
+
+        {/* SOCIAL */}
+        <div className={Styles.col}>
+          <h3 className={Styles.title}>Redes sociais</h3>
+
+          <div className={Styles.social}>
+            <NavLink to="https://wa.me/5542998527599" target="_blank">
+              <FaWhatsapp />
+            </NavLink>
+            <NavLink
+              to="https://www.linkedin.com/in/jonathan-zdebski-dalalibra-3589851a0/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </NavLink>
+            <NavLink to="https://github.com/JonathanZdebski" target="_blank">
+              <FaGithub />
+            </NavLink>
+            <NavLink
+              to="https://www.instagram.com/jonathandalalibra/"
+              target="_blank"
+            >
+              <FaInstagram />
+            </NavLink>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div className={Styles.copy}>
+        © {new Date().getFullYear()} Jonathan Zdebski — Todos os direitos
+        reservados
+      </div>
+    </footer>
   );
 }
 

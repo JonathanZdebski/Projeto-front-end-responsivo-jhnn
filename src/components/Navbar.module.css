@@ -1,101 +1,113 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    z-index: 10;
-    background-color: rgba(22, 22, 22, 0.651);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(22, 22, 22, 0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.header h1:hover{
-    color: rgb(187, 187, 187);
-    transition: 0.3s;
-
+.header h1:hover {
+  color: rgb(200, 200, 200);
+  transition: 0.3s ease;
 }
+
+/* ------------------ MENU DESKTOP ------------------ */
 
 .navmenu {
-    display: flex;
-    transition: 0.3s;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
 }
 
 .navmenu li {
-    margin: 0.8rem 0.3rem;
-    cursor: pointer;
-    padding: 12px;
-    position: relative;
+  margin: 0.8rem 0.3rem;
+  cursor: pointer;
+  padding: 12px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.navmenu li a {
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navmenu li:hover a {
+  color: #fff;
 }
 
 .navmenu li::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 100%;
-    width: 0;
-    height: 3.5px;
-    background-color: #eee;
-    transition: width 0.2s ease, right 0.2s ease; 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* ← começa da esquerda */
+  width: 0%; /* começa invisível */
+  height: 3px;
+  background: linear-gradient(90deg, #fff, #888);
+  transition: width 0.25s ease;
+  border-radius: 2px;
 }
 
 .navmenu li:hover::after {
-    width: 100%; 
-    right: 0;
+  width: 100%; /* → corre até a direita */
 }
 
-.navmenu li a{
-    font-size: 1.2rem;
-   
-}
+/* ------------------ HAMBURGUER ------------------ */
 
 .hamburguer {
-    display: none;
+  display: none;
 }
 
+/* ------------------ MOBILE ------------------ */
+
 @media screen and (max-width: 1040px) {
-    .navmenu {
-        flex-direction: column;
-        padding: 80px 0 30px 130px;
-        align-items: center;
-        justify-content: flex-start;
-        width: 150%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 10%;
-        left: -50%;
-        z-index: -1;
-    }
+  .navmenu {
+    flex-direction: column;
+    padding: 80px 0 30px 130px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 10%;
+    left: -50%;
+    z-index: -1;
+  }
 
-    .navmenuactive {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 80px 0 30px 130px;
-        width: 150%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 0;
-        left: -150%;
-        transition: 0.3s;
-    }
+  .navmenuactive {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 30px 130px;
+    width: 150%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: -150%;
+    transition: 0.3s;
+  }
 
-    .navmenu li {
-        padding: 1rem 0;   
-        margin-right: -45%;
-        padding: 10px;
-    }
-    .navmenu li a {
-        font-size: 2rem;
-    }
-    .hamburguer {
-        display: initial;
-        display: flex;
-        justify-content: space-between;
-        padding: 2rem;
-        position: relative;
-    }
-
+  .navmenu li {
+    padding: 1rem 0;
+    margin-right: -45%;
+    padding: 10px;
+  }
+  .navmenu li a {
+    font-size: 2rem;
+  }
+  .hamburguer {
+    display: initial;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+  }
 }

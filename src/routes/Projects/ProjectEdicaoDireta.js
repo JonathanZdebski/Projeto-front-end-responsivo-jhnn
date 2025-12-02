@@ -2,21 +2,21 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import HImage2 from "../../components/HImage2";
-import ProjectPokeNext from "../../components/ProjectPokeNext";
 import PageTitle from "../../components/PageTitle";
 import BackToTopButton from "../../components/BackToTopButton";
+import ProjectEdicaoDireta from "../../components/ProjectEdicaoDireta";
 
-function ProjectEight() {
+function ProjectEDireta() {
   return (
     <div>
-      <PageTitle title="Projeto PokeNext - DownloaderSystem" />
+      <PageTitle title="Projeto Edição Direta - Portfolio Jonathan Zdebski" />
       <Navbar />
       <HImage2 heading="PROJECTS." text="Alguns dos meus trabalhos recentes." />
-      <ProjectPokeNext />
+      <ProjectEdicaoDireta />
       <BackToTopButton />
       <Footer />
     </div>
   );
 }
 
-export default ProjectEight;
+export default ProjectEDireta;

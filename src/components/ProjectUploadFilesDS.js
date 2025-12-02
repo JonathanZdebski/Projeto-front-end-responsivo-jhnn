@@ -10,7 +10,7 @@ const UploadFilesDS = () => {
       <div className={styles.card2}>
         <Translate />
         <div className={styles.title}>
-          <h1>Projeto Upload Files DS</h1>
+          <h1>Projeto SaaS Upload Files DS</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
           <ul className={styles.resumetext}>
             <br />

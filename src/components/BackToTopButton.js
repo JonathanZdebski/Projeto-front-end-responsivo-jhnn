@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import styles from "../components/BackToTopButton.module.css";
+import { FiChevronUp } from "react-icons/fi"; // ÍCONE MODERNO
 
 function BackToTopButton() {
   const [backToTopButton, setBackToTopButton] = useState(false);
@@ -26,7 +27,7 @@ function BackToTopButton() {
     <div className="ScrollUp">
       {backToTopButton && (
         <button className={styles.backToTop} onClick={scrollUp}>
-          ⬆
+          <FiChevronUp size={28} />
         </button>
       )}
     </div>

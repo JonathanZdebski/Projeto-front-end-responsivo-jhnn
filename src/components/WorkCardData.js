@@ -2,20 +2,34 @@ import pro1 from "../assets/project1.png";
 import pro2 from "../assets/project2.png";
 import pro3 from "../assets/project3.png";
 import pro4 from "../assets/project4.png";
-import pokenxt from "../assets/pokenxt.png";
-import pro5 from "../assets/project5.png";
 import pro6 from "../assets/project6.png";
 import pro7 from "../assets/project7.png";
 import prompts from "../assets/prompts.png";
 import CarHub from "../assets/CarHub.png";
 import NewTab from "../assets/newtab.png";
 import uploadfilesds from "../assets/uploadfilesds.png";
+import ed from "../assets/ed.png";
+import okr from "../assets/okr.png";
 
 const ProjectCardData = [
   {
+    id: 13,
+    imgsrc: okr,
+    title: "Projeto SaaS OKR Planner",
+    text: "Tecnologias: Next.js, Typescript, Supabase, TailWindCSS, Framer-motion, Google Search Console SEO, Shadcn/UI, Stripe Payments",
+    view: "/projeto-okr-planner",
+  },
+  {
+    id: 12,
+    imgsrc: ed,
+    title: "Projeto SaaS Edição Direta",
+    text: "Tecnologias: Next.js, Typescript, Firebase, TailWindCSS, Google Search Console SEO, Shadcn/UI",
+    view: "/projeto-edicao-direta",
+  },
+  {
     id: 1,
     imgsrc: uploadfilesds,
-    title: "Projeto Upload Files DS",
+    title: "Projeto SaaS Upload Files DS",
     text: "Tecnologias: Google Analytics, Google Search SEO, TypeScript, Next.js, Stripe Payments, Tailwind CSS, NextAuth v5, MongoDB, EdgeStore, ShadCN",
     view: "/projeto-uploadfilesds",
   },
@@ -55,13 +69,6 @@ const ProjectCardData = [
     view: "/projeto-prompts-full-stack",
   },
   {
-    id: 7,
-    imgsrc: pokenxt,
-    title: "Projeto PokeNext",
-    text: "Tecnologias: NextJS, API externa.",
-    view: "/projeto-poke-next",
-  },
-  {
     id: 8,
     imgsrc: pro2,
     title: "Projeto HBanks Responsivo",
@@ -88,13 +95,6 @@ const ProjectCardData = [
     title: "Projeto Viagem Responsivo",
     text: "Tecnologias: ReactJS, JSON.",
     view: "/projeto-viagem-responsivo",
-  },
-  {
-    id: 12,
-    imgsrc: pro5,
-    title: "Projeto Gen ReactJS",
-    text: "Tecnologias: ReactJS, API do JSON.",
-    view: "/projeto-gen-reactjs",
   },
 ];
 

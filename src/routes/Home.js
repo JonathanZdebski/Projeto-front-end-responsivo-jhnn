@@ -10,7 +10,7 @@ import PageTitle from "../components/PageTitle";
 function Home() {
   return (
     <div>
-      <PageTitle title="Jhnn Portfolio" />
+      <PageTitle title="Portfólio - Jonathan Zdebski" />
       <Navbar />
       <HeroImg />
       <WorkHome />
