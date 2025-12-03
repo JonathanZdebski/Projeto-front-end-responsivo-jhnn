@@ -84,3 +84,65 @@
   opacity: 0.5;
   font-size: 0.9rem;
 }
+
+/* 📱 Smartphones — tela pequena (até 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 3rem 1.2rem 2rem;
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .col {
+    align-items: center;
+    text-align: center;
+  }
+
+  .item {
+    justify-content: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}
+
+/* 📱 Smartphones grandes / 720p */
+@media (max-width: 720px) {
+  .footer {
+    padding: 3.5rem 1.5rem 2.5rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.8rem;
+  }
+
+  .col {
+    text-align: center;
+    align-items: center;
+  }
+
+  .item {
+    justify-content: center;
+  }
+}
+
+/* 📱 Telas maiores — até 800px */
+@media (max-width: 800px) {
+  .footer {
+    padding: 4rem 2rem 2.5rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .item {
+    justify-content: center;
+  }
+}
