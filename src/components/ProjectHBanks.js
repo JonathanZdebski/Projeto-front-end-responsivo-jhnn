@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import Translate from "../components/Translate";
 
 const ProjectHBanks = () => {
-  const [playerId, setPlayerId] = useState(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -16,10 +15,6 @@ const ProjectHBanks = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const onReady = (event) => {
-    setPlayerId(event.target.getIframe().id);
-  };
 
   return (
     <div className={styles.card}>
@@ -89,7 +84,6 @@ const ProjectHBanks = () => {
                 autoplay: 0,
               },
             }}
-            onReady={onReady}
           />
         </div>
         <div>

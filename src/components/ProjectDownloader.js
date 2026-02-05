@@ -7,7 +7,6 @@ import zoom from "../assets/zoom.png";
 import Translate from "../components/Translate";
 
 const ProjectDownloader = () => {
-  const [playerId, setPlayerId] = useState(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -17,10 +16,6 @@ const ProjectDownloader = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const onReady = (event) => {
-    setPlayerId(event.target.getIframe().id);
-  };
 
   return (
     <div className={styles.card}>
@@ -76,7 +71,6 @@ const ProjectDownloader = () => {
                 autoplay: 0,
               },
             }}
-            onReady={onReady}
           />
         </div>
         <div>

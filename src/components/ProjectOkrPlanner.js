@@ -6,7 +6,7 @@ import YouTube from "react-youtube";
 import { useState, useEffect } from "react";
 
 const ProjectOkrPlanner = () => {
-  const [setPlayerId] = useState(null);
+  const [, setPlayerId] = useState(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {

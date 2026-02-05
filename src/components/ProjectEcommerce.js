@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import Translate from "../components/Translate";
 
 const ProjectEcommerce = () => {
-  const [setPlayerId] = useState(null);
+  const [, setPlayerId] = useState(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {

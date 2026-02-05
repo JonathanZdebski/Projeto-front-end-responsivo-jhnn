@@ -7,7 +7,7 @@ import YouTube from "react-youtube";
 import { Link } from "react-router-dom";
 
 const ProjectEcommerce = () => {
-  const [setPlayerId] = useState(null);
+  const [, setPlayerId] = useState(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
