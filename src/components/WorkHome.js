@@ -18,8 +18,21 @@ function WorkHome() {
             <img src={project.imgsrc} alt="" />
             <h2 className={Styles.projecttitle}>{project.title}</h2>
             <div className={Styles.prodetails}>
-              <p>{project.text}</p>
+              {project.text && (
+                <div className={Styles.techlist}>
+                  {project.text
+                    .replace(/^Tecnologias:\s*/i, "")
+                    .split(",")
+                    .map((item) => item.trim())
+                    .map((tech) => (
+                      <span key={tech} className={Styles.techpill}>
+                        {tech}
+                      </span>
+                    ))}
+                </div>
+              )}
             </div>
+            {project.isNew && <span className={Styles.badgeNew}>NOVO</span>}
           </NavLink>
         ))}
       </div>

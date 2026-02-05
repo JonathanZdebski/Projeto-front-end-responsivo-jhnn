@@ -14,7 +14,7 @@ function About() {
 
       <HImage2
         heading="ABOUT."
-        text="Sou um desenvolvedor Front-end à procura de uma oportunidade."
+        text="Desenvolvedor Front-end focado em criar experiências digitais modernas e acessíveis."
       />
       <Translate />
       <AboutContent />

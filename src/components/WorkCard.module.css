@@ -37,6 +37,7 @@
   margin-bottom: -3rem;
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Efeito de sombra */
   transition: all 0.4s ease; /* Transição suave para o efeito hover */
+  position: relative;
 }
 
 .projectcard:hover {
@@ -65,6 +66,44 @@
   padding-bottom: 1rem;
   font-size: 1.1rem;
   text-align: center;
+}
+
+.badgeNew {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
+  color: #0f172a;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(41, 131, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+}
+
+.techlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  padding: 0.35rem 0 0.15rem;
+  max-width: 88%;
+  margin: 0 auto;
+}
+
+.techpill {
+  background: #cfe4ff;
+  color: #1e3a8a;
+  border: 1px solid #9dc6ff;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .probtns {
@@ -116,27 +155,42 @@
 }
 
 .btnacess {
-  color: #000000;
-  background: rgb(86, 216, 255);
+  color: #0f172a;
+  background: linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
   text-transform: uppercase;
-  padding: 12px 24px;
+  padding: 12px 28px;
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-align: center;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.28);
   cursor: pointer;
   text-decoration: none;
-  font-weight: 600;
-  border-radius: 0.3rem;
-  border: 1px solid #9b9b9b;
-  transition: 0.3s;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(41, 131, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .btnacess:hover {
-  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(41, 131, 255, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
   color: #fff;
-  transition: 0.3s;
+}
+
+.btnacess:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(41, 131, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.btnacess:focus-visible {
+  outline: 2px solid rgba(111, 225, 255, 0.9);
+  outline-offset: 2px;
 }
 
 @media screen and (max-width: 740px) {

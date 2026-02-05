@@ -11,7 +11,7 @@ function HeroImg() {
       <div className={Styles.content}>
         <p>OLÁ, MEU NOME É JONATHAN</p>
         <h1 className={Styles.title}>
-          Desenvolvedor Front-end Jr com experiência em React.js, Next.js,
+          Desenvolvedor Front-end com experiência em React.js, Next.js,
           TypeScript e boas práticas de UI/UX.
         </h1>
 

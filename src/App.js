@@ -18,6 +18,7 @@ import ProjectNewTabA from "./routes/Projects/ProjectNewTab";
 import UploadFilesDS from "./routes/Projects/ProjectUploadFilesDS";
 import ProjectOkrPlanner from "./routes/Projects/ProjectOkrPlanner";
 import ProjectEDireta from "./routes/Projects/ProjectEdicaoDireta";
+import ProjectWebsiteInstitucionalRoute from "./routes/Projects/ProjectWebsiteInstitucional";
 
 function App() {
   return (
@@ -42,6 +43,10 @@ function App() {
         <Route path="/projeto-uploadfilesds" element={<UploadFilesDS />} />
         <Route path="/projeto-edicao-direta" element={<ProjectEDireta />} />
         <Route path="/projeto-okr-planner" element={<ProjectOkrPlanner />} />
+        <Route
+          path="/projeto-website-institucional"
+          element={<ProjectWebsiteInstitucionalRoute />}
+        />
       </Routes>
     </>
   );

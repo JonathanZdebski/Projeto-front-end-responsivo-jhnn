@@ -29,17 +29,21 @@ li {
 }
 
 .btn {
-  padding: 12px 32px;
-  font-size: 1rem;
+  padding: 12px 34px;
+  font-size: 0.95rem;
   text-transform: uppercase;
-  background: rgb(86, 216, 255);
-  color: #222;
-  border: 1px solid #fff;
-  font-weight: 600;
+  background: linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
+  color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  font-weight: 700;
+  letter-spacing: 0.5px;
   cursor: pointer;
   margin: 1rem 0.2rem;
-  border-radius: 0.5rem;
-  transition: 0.3s;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(41, 131, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .btn.zap {
@@ -51,14 +55,29 @@ li {
 }
 
 .btn-light {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.06);
   color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(41, 131, 255, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
   color: #fff;
-  transition: 0.3s;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(41, 131, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.btn:focus-visible {
+  outline: 2px solid rgba(111, 225, 255, 0.9);
+  outline-offset: 2px;
 }
 
 .imglogo {

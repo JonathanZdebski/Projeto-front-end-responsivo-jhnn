@@ -69,44 +69,48 @@
 }
 
 .btnwd {
-  padding: 12px 50px;
-  font-size: 1rem;
+  padding: 12px 36px 12px 54px;
+  font-size: 0.95rem;
   text-transform: uppercase;
-  background: rgb(86, 216, 255);
-  color: #222;
-  border: 1px solid #9b9b9b;
-  font-weight: 600;
+  background: linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
+  color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  font-weight: 700;
+  letter-spacing: 0.5px;
   cursor: pointer;
   margin: 1rem 0.2rem;
-  border-radius: 0.3rem;
+  border-radius: 999px;
   display: inline;
-  width: 20%;
+  width: auto;
   margin: 1rem 3em;
-  transition: 0.3s;
+  box-shadow: 0 10px 24px rgba(41, 131, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .btnwd.web {
-  background-image: url("../assets/web.png");
-  background-size: 30px;
-  background-position: left;
+  background-image: url("../assets/web.png"),
+    linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
+  background-size: 22px, auto;
+  background-position: 0.85rem center, center;
   background-repeat: no-repeat;
-  background-position-x: 0.3rem;
 }
 
 .btnwd.github {
-  background-image: url("../assets/GitHub.png");
-  background-size: 30px;
-  background-position: left;
+  background-image: url("../assets/GitHub.png"),
+    linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
+  background-size: 22px, auto;
+  background-position: 0.85rem center, center;
   background-repeat: no-repeat;
-  background-position-x: 0.3rem;
 }
 
 .btnwd.youtube {
-  background-image: url("../assets/youtube.png");
-  background-size: 30px;
-  background-position: left;
+  background-image: url("../assets/youtube.png"),
+    linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
+  background-size: 22px, auto;
+  background-position: 0.85rem center, center;
   background-repeat: no-repeat;
-  background-position-x: 0.3rem;
 }
 
 .btnwd-light {
@@ -115,9 +119,21 @@
 }
 
 .btnwd:hover {
-  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(41, 131, 255, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
   color: #fff;
-  transition: 0.3s;
+}
+
+.btnwd:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(41, 131, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.btnwd:focus-visible {
+  outline: 2px solid rgba(111, 225, 255, 0.9);
+  outline-offset: 2px;
 }
 
 .Link {
@@ -135,7 +151,7 @@
   .btnwd {
     display: flex;
     flex-direction: column;
-    padding: 5px 6.9rem;
+    padding: 10px 3.5rem 10px 4.5rem;
     align-items: center;
     margin: 1rem;
     margin-left: 5.5rem;
