@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../components/ProjectEcommerce.module.css";
 import { NavLink } from "react-router-dom";
-import Translate from "../components/Translate";
 import YouTube from "react-youtube";
 import { useState, useEffect } from "react";
 
@@ -24,7 +23,6 @@ const ProjectOkrPlanner = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto SaaS OKR Planner</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
@@ -110,9 +108,8 @@ const ProjectOkrPlanner = () => {
             <br />
           </ul>
         </div>
-
         <div>
-          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>{" "}
+          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
           <br />
           <YouTube
             videoId="WG4hl9TFOWw"
@@ -126,7 +123,6 @@ const ProjectOkrPlanner = () => {
             onReady={onReady}
           />
         </div>
-
         <div>
           <NavLink
             to="https://www.okrplanner.com/"

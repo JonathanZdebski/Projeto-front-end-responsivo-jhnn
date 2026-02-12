@@ -6,34 +6,46 @@ import React2 from "../assets/react2.webp";
 
 function AboutContent() {
   return (
-    <div className={Styles.about}>
-      <div className={Styles.left}>
-        <h1>Quem sou</h1>
-        <p>
-          Sou entusiasta de tecnologia desde os 12 anos, sempre curioso sobre o
-          funcionamento dos websites. Em 2018, tive a oportunidade de entrar de
-          vez no universo da programação. Desde então, sigo evoluindo com
-          dedicação, determinação e vontade constante de aprender e adquirir
-          novas experiências.
-        </p>
-        <Link to="/contact">
-          <button className="btn">Contato</button>
-        </Link>
-        <Link to="https://wa.me/5542998527599" target="_blank">
-          <button className="btn zap">WhatsApp</button>
-        </Link>
-      </div>
-      <div className={Styles.right}>
-        <div className={Styles.imagecontainer}>
-          <div className={`${Styles["img-stack"]} ${Styles.top}`}>
-            <img src={React1} className={Styles.img} alt="true" />
+    <section className={Styles.about}>
+      <div className={Styles.inner}>
+        <article className={Styles.left}>
+          <p className={Styles.kicker}>Sobre mim</p>
+          <h2>Quem sou</h2>
+          <p className={Styles.description}>
+            Sou entusiasta de tecnologia desde os 12 anos, sempre curioso sobre
+            o funcionamento dos websites. Em 2018, tive a oportunidade de entrar
+            de vez no universo da programação. Desde então, sigo evoluindo com
+            dedicação, determinação e vontade constante de aprender e adquirir
+            novas experiências.
+          </p>
+
+          <div className={Styles.actions}>
+            <Link to="/contact" className={`${Styles.cta} ${Styles.primary}`}>
+              Contato
+            </Link>
+            <Link
+              to="https://wa.me/5542998527599"
+              target="_blank"
+              rel="noreferrer"
+              className={`${Styles.cta} ${Styles.whatsapp}`}
+            >
+              WhatsApp
+            </Link>
           </div>
-          <div className={`${Styles["img-stack"]} ${Styles.bottom}`}>
-            <img src={React2} className={Styles.img} alt="true" />
+        </article>
+
+        <aside className={Styles.right}>
+          <div className={Styles.imagecontainer}>
+            <div className={`${Styles.imgStack} ${Styles.top}`}>
+              <img src={React1} className={Styles.img} alt="Dashboard de projeto" />
+            </div>
+            <div className={`${Styles.imgStack} ${Styles.bottom}`}>
+              <img src={React2} className={Styles.img} alt="Interface de aplicação" />
+            </div>
           </div>
-        </div>
+        </aside>
       </div>
-    </div>
+    </section>
   );
 }
 

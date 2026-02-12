@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import HImage2 from "../components/HImage2";
 import AboutContent from "../components/AboutContent";
 import PageTitle from "../components/PageTitle";
-import Translate from "../components/Translate";
 
 function About() {
   return (
@@ -16,7 +15,6 @@ function About() {
         heading="ABOUT."
         text="Desenvolvedor Front-end focado em criar experiências digitais modernas e acessíveis."
       />
-      <Translate />
       <AboutContent />
       <Footer />
     </div>

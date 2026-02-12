@@ -1,50 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 import Styles from "../components/HImage2.module.css";
-import codingthreeImg from "../assets/codingthree.jpg"; // Caminho para a imagem
+import codingthreeImg from "../assets/codingthree.jpg";
 
-class HImage2 extends Component {
-  render() {
-    return (
-      <div
-        className={Styles.heroimg}
-        style={{
-          width: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-          height: "60vh",
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            content: '""',
-            background: `url(${codingthreeImg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center top",
-            height: "100%",
-            width: "100%",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            zIndex: -1,
-          }}
-        />
-        <div
-          className={Styles.heading}
-          style={{
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <h1>{this.props.heading}</h1>
-          <p>{this.props.text}</p>
-        </div>
+function HImage2({ heading, text }) {
+  return (
+    <section
+      className={Styles.heroimg}
+      style={{ backgroundImage: `url(${codingthreeImg})` }}
+    >
+      <div className={Styles.gridOverlay} aria-hidden="true" />
+      <div className={Styles.heading}>
+        <h1>{heading}</h1>
+        <p>{text}</p>
       </div>
-    );
-  }
+    </section>
+  );
 }
 
 export default HImage2;

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../components/ProjectEcommerce.module.css";
 import { NavLink } from "react-router-dom";
-import Translate from "../components/Translate";
 import YouTube from "react-youtube";
 import { useState, useEffect } from "react";
 
@@ -24,7 +23,6 @@ const ProjectEdicaoDireta = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto SaaS Edição Direta</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
@@ -33,9 +31,9 @@ const ProjectEdicaoDireta = () => {
             <li style={{ listStyleType: "disc" }}>
               <strong>Next.js:</strong> <br />
               Framework React moderno que oferece SSR, SSG e rotas otimizadas.
-              Facilita a criação de aplicações rápidas, escaláveis e com
+              Facilita a criação de aplicaçÃµes rápidas, escaláveis e com
               excelente desempenho, além de melhorar significativamente o SEO e
-              fornecer otimizações automáticas de build.
+              fornecer otimizaçÃµes automáticas de build.
             </li>
             <br />
             <li style={{ listStyleType: "disc" }}>
@@ -97,7 +95,7 @@ const ProjectEdicaoDireta = () => {
         </div>
 
         <div>
-          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>{" "}
+          <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>{" "}
           <br />
           <YouTube
             videoId="KSnbcuelAfQ"
@@ -127,3 +125,5 @@ const ProjectEdicaoDireta = () => {
 };
 
 export default ProjectEdicaoDireta;
+
+

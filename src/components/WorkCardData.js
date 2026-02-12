@@ -19,6 +19,7 @@ const ProjectCardData = [
     text: "Tecnologias: Next.js, Typescript, Supabase, Tailwind CSS, NextAuth v5, Framer-motion, Google Search Console SEO, Shadcn/UI, Stripe Payments",
     view: "/projeto-okr-planner",
     isNew: true,
+    isSaaS: true,
   },
   {
     id: 12,
@@ -27,6 +28,7 @@ const ProjectCardData = [
     text: "Tecnologias: Next.js, Typescript, Firebase, Tailwind CSS, NextAuth v5, Google Search Console SEO, Shadcn/UI",
     view: "/projeto-edicao-direta",
     isNew: true,
+    isSaaS: true,
   },
   {
     id: 1,
@@ -35,6 +37,7 @@ const ProjectCardData = [
     text: "Tecnologias: Google Analytics, Google Search SEO, TypeScript, Next.js, Stripe Payments, Tailwind CSS, NextAuth v5, MongoDB, EdgeStore, ShadCN",
     view: "/projeto-uploadfilesds",
     isNew: true,
+    isSaaS: true,
   },
   {
     id: 2,
@@ -43,6 +46,7 @@ const ProjectCardData = [
     text: "Tecnologias: NextJS, TypeScript, Tailwind CSS.",
     view: "/projeto-website-institucional",
     isNew: true,
+    isInstitucional: true,
   },
   {
     id: 3,

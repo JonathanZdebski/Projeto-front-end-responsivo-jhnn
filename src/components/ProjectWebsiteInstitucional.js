@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "../components/ProjectEcommerce.module.css";
 import DraCamilaImg from "../assets/DraCamilaImg.png";
-import Translate from "../components/Translate";
 import { NavLink } from "react-router-dom";
 
 const ProjectWebsiteInstitucional = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto Website Institucional</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
@@ -31,7 +29,7 @@ const ProjectWebsiteInstitucional = () => {
             <br />
           </ul>
         </div>
-        <div style={{ marginTop: "-30px" }} className={styles.containerimg}>
+        <div className={styles.containerimg}>
           <img
             className={styles.zoomimg}
             src={DraCamilaImg}
@@ -54,3 +52,6 @@ const ProjectWebsiteInstitucional = () => {
 };
 
 export default ProjectWebsiteInstitucional;
+
+
+

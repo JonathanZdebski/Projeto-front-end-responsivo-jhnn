@@ -3,7 +3,6 @@ import YouTube from "react-youtube";
 import styles from "../components/ProjectEcommerce.module.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import Translate from "../components/Translate";
 
 const ProjectEcommerce = () => {
   const [, setPlayerId] = useState(null);
@@ -24,7 +23,6 @@ const ProjectEcommerce = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto Ecommerce John Dala</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
@@ -78,7 +76,7 @@ const ProjectEcommerce = () => {
               página de realização de compra e setar o cache após a compra do
               usuário. Resumindo o useEffect é uma ferramenta poderosa que ajuda
               a tornar os componentes do React mais dinâmicos e responsivos,
-              permitindo que eles realizem ações secundárias e se adaptem às
+              permitindo que eles realizem açÃµes secundárias e se adaptem Ã s
               mudanças no estado da aplicação.
             </li>
             <br />
@@ -108,7 +106,7 @@ const ProjectEcommerce = () => {
         </div>
         <div>
           <br />
-          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
+          <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>
           <YouTube
             videoId="cMbdd_1hLNA"
             opts={{
@@ -143,3 +141,5 @@ const ProjectEcommerce = () => {
 };
 
 export default ProjectEcommerce;
+
+

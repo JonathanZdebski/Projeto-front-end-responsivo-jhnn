@@ -1,169 +1,322 @@
 .card {
-  text-align: center;
+  position: relative;
   width: 100%;
-  padding: 2rem 0 2rem 0;
+  padding: 2.4rem 1rem 2rem;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 999px;
+  filter: blur(72px);
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.card::before {
+  top: -140px;
+  left: -150px;
+  background: rgba(14, 165, 233, 0.5);
+  animation: projectAura 12s ease-in-out infinite;
 }
 
 .card2 {
-  background-color: rgba(63, 63, 63, 0.274);
-  width: 100%;
-  height: 100%;
-  display: grid;
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: flex;
   flex-direction: column;
-  margin: auto;
-  max-width: 1140px;
-  grid-gap: 40px;
-  border-radius: 1rem;
-  padding: 3.5rem;
-  padding-top: 2rem;
-  margin-bottom: -4rem;
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Efeito de sombra */
-  transition: box-shadow 0.3s ease; /* Transição suave para o efeito de sombra */
+  gap: 1.5rem;
+  padding: clamp(1.2rem, 2.8vw, 2.6rem);
+  border-radius: 1.3rem;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  background: linear-gradient(
+    160deg,
+    rgba(39, 39, 42, 0.5) 0%,
+    rgba(24, 24, 27, 0.5) 100%
+  );
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
 }
 
-.apres {
-  color: aliceblue;
-  margin-top: -20px;
+.card2 > div:last-child {
+  order: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
 }
 
 .title h1 {
+  order: 1;
+  margin: 0.85rem 0 1.35rem;
   text-align: center;
+  font-size: clamp(1.8rem, 3.15vw, 2.8rem);
+  line-height: 1.15;
+  color: #f8fafc;
+  text-wrap: balance;
+}
+
+.title {
+  display: contents;
 }
 
 .title p {
-  padding: 1.5rem;
+  margin: 0;
   text-align: left;
-}
-
-.title .resumetext {
-  align-items: center;
-  text-align: left;
-  margin: 5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #fff;
-  margin-right: 2.5rem;
+  color: #e2e8f0;
+  line-height: 1.7;
 }
 
 .title .resumetext2 {
-  align-items: center;
-  text-align: center;
-  margin: 1.5rem;
-  margin-bottom: 2.5rem;
-  color: #fff;
+  order: 4;
+  width: fit-content;
+  margin: 0 auto 1.2rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(125, 211, 252, 0.4);
+  background: rgba(14, 116, 144, 0.18);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 0.72rem;
+  color: #bae6fd;
+}
+
+.title .resumetext {
+  order: 5;
+  margin: 0;
+  padding: 0;
+  color: #e5ecf8;
+}
+
+.resumetext br {
+  display: none;
+}
+
+.resumetext li {
+  list-style-type: none !important;
+  position: relative;
+  margin-bottom: 0.85rem;
+  padding: 0.95rem 1.05rem 0.95rem 1.25rem;
+  border-radius: 0.95rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(10, 15, 28, 0.62);
+  color: #dbe6f7;
+  line-height: 1.55;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.resumetext li::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 1.35rem;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: #67e8f9;
+}
+
+.resumetext li strong {
+  color: #ffffff;
+}
+
+.resumetext li ul {
+  margin: 0.6rem 0 0;
+  padding: 0;
+}
+
+.resumetext li ul li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.resumetext li ul li::before {
+  display: none;
+}
+
+.apres {
+  display: none;
+}
+
+.card2 iframe {
+  display: block;
+  width: min(100%, 940px) !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 18px 36px rgba(2, 8, 24, 0.5);
 }
 
 .containerimg {
+  order: 2;
   text-align: center;
+}
+
+.card2 > div:has(.apres),
+.card2 > div:has(iframe) {
+  order: 2;
 }
 
 .zoomimg {
-  text-align: center;
-  border-radius: 20px;
-  margin-top: 1rem;
-  transition: transform 0.3s ease-out;
+  width: min(100%, 940px);
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 18px 36px rgba(2, 8, 24, 0.5);
+  transition: transform 0.35s ease, filter 0.35s ease;
 }
+
 .zoomimg:hover {
-  transition: 0.3s;
-  transform: scale(1.1);
+  transform: translateY(-4px) scale(1.01);
+  filter: saturate(1.08);
 }
 
 .btnwd {
-  padding: 12px 36px 12px 54px;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  background: linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
-  color: #0f172a;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  margin: 1rem 0.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-width: 188px;
+  margin: 0;
+  padding: 0.78rem 1.3rem 0.78rem 2.85rem;
   border-radius: 999px;
-  display: inline;
-  width: auto;
-  margin: 1rem 3em;
-  box-shadow: 0 10px 24px rgba(41, 131, 255, 0.25),
+  border: 1px solid rgba(125, 211, 252, 0.42);
+  background: linear-gradient(135deg, #67e8f9 0%, #38bdf8 60%, #3b82f6 100%);
+  color: #082f49;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  box-shadow: 0 14px 30px rgba(14, 165, 233, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease,
-    background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.24s ease, box-shadow 0.24s ease,
+    filter 0.24s ease;
 }
 
 .btnwd.web {
   background-image: url("../assets/web.png"),
-    linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
-  background-size: 22px, auto;
-  background-position: 0.85rem center, center;
+    linear-gradient(135deg, #67e8f9 0%, #38bdf8 60%, #3b82f6 100%);
+  background-size: 17px, auto;
+  background-position: 0.95rem center, center;
   background-repeat: no-repeat;
 }
 
 .btnwd.github {
   background-image: url("../assets/GitHub.png"),
-    linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
-  background-size: 22px, auto;
-  background-position: 0.85rem center, center;
+    linear-gradient(135deg, #67e8f9 0%, #38bdf8 60%, #3b82f6 100%);
+  background-size: 17px, auto;
+  background-position: 0.95rem center, center;
   background-repeat: no-repeat;
 }
 
 .btnwd.youtube {
   background-image: url("../assets/youtube.png"),
-    linear-gradient(135deg, #6fe1ff 0%, #3ba0ff 100%);
-  background-size: 22px, auto;
-  background-position: 0.85rem center, center;
+    linear-gradient(135deg, #67e8f9 0%, #38bdf8 60%, #3b82f6 100%);
+  background-size: 17px, auto;
+  background-position: 0.95rem center, center;
   background-repeat: no-repeat;
 }
 
 .btnwd-light {
-  background: transparent;
-  color: #fff;
+  color: #e2e8f0;
+  border-color: rgba(148, 163, 184, 0.45);
+  background: rgba(7, 12, 24, 0.7);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
 .btnwd:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 32px rgba(41, 131, 255, 0.35),
+  box-shadow: 0 18px 35px rgba(14, 165, 233, 0.32),
     inset 0 1px 0 rgba(255, 255, 255, 0.45);
-  color: #fff;
+  filter: saturate(1.05);
+  color: #031a2b;
 }
 
 .btnwd:active {
   transform: translateY(0);
-  box-shadow: 0 8px 18px rgba(41, 131, 255, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 .btnwd:focus-visible {
-  outline: 2px solid rgba(111, 225, 255, 0.9);
+  outline: 2px solid rgba(103, 232, 249, 0.92);
   outline-offset: 2px;
 }
 
 .Link {
-  font-weight: 800;
+  font-weight: 700;
+  color: #7dd3fc;
   text-decoration: underline;
 }
 
-@media screen and (max-width: 840px) {
+@keyframes projectAura {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .card {
+    padding-top: 1.8rem;
+  }
+
   .card2 {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    align-items: center;
+    gap: 1.15rem;
+    border-radius: 1rem;
   }
+
+  .title h1 {
+    font-size: clamp(1.45rem, 6.2vw, 2rem);
+    margin-top: 0.45rem;
+  }
+
+  .title .resumetext2 {
+    margin-bottom: 0.95rem;
+  }
+
+  .resumetext li {
+    padding: 0.78rem 0.8rem 0.78rem 1.1rem;
+    font-size: 0.95rem;
+  }
+
+  .resumetext li::before {
+    left: 0.45rem;
+    top: 1.15rem;
+  }
+
   .btnwd {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 3.5rem 10px 4.5rem;
-    align-items: center;
-    margin: 1rem;
-    margin-left: 5.5rem;
+    min-width: 152px;
+    padding: 0.72rem 1.05rem 0.72rem 2.35rem;
+    font-size: 0.68rem;
   }
-  .card2 h3 {
-    font-size: medium;
+
+  .btnwd.web,
+  .btnwd.github,
+  .btnwd.youtube {
+    background-size: 15px, auto;
+    background-position: 0.75rem center, center;
   }
-  .title .resumetext {
-    margin-left: 2.7rem;
-  }
-  .zoomimg {
-    width: 90%;
-    flex-direction: column;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card::before {
+    animation: none;
   }
 }

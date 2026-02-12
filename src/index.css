@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
@@ -82,4 +85,33 @@ li {
 
 .imglogo {
   width: 100px;
+}
+
+/* Reusable gradient overlay that sits on top of any container. */
+.gradient-overlay {
+  --overlay-gradient: radial-gradient(
+      62% 70% at 100% 72%,
+      rgba(251, 113, 133, 0.3) 0%,
+      rgba(251, 113, 133, 0) 72%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(14, 165, 233, 0.14) 0%,
+      rgba(14, 165, 233, 0) 42%
+    );
+  --overlay-opacity: 1;
+  --overlay-blend-mode: normal;
+  position: relative;
+  isolation: isolate;
+}
+
+.gradient-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  background: var(--overlay-gradient);
+  opacity: var(--overlay-opacity);
+  mix-blend-mode: var(--overlay-blend-mode);
 }

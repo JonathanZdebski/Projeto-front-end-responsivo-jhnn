@@ -3,7 +3,6 @@ import YouTube from "react-youtube";
 import styles from "../components/ProjectEcommerce.module.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import Translate from "../components/Translate";
 
 const ProjectPortfolio = () => {
   const [, setPlayerId] = useState(null);
@@ -24,13 +23,12 @@ const ProjectPortfolio = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto Portfolio Responsivo</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
           <ul className={styles.resumetext}>
             <li style={{ listStyleType: "disc" }}>
-              Utilizamos o React Router para fazer as navegações entre as
+              Utilizamos o React Router para fazer as navegaçÃµes entre as
               páginas. Permitindo gerenciar as rotas do aplicativo de maneira
               eficiente e fácil. Isso significa que as páginas do aplicativo
               podem ser exibidas com base no URL da página, tornando a navegação
@@ -40,7 +38,7 @@ const ProjectPortfolio = () => {
             <li style={{ listStyleType: "disc" }}>
               Utilizamos o Hook useRef no projeto que é uma ferramenta útil para
               manipulação de elementos DOM e para preservação de valores entre
-              renderizações em componentes funcionais do React. Ele também é
+              renderizaçÃµes em componentes funcionais do React. Ele também é
               flexível e pode ser usado para referenciar qualquer valor mutável,
               além de oferecer melhor desempenho em comparação com as variáveis
               de estado do React.
@@ -51,10 +49,10 @@ const ProjectPortfolio = () => {
               Scrollup em três páginas com conteúdo para facilitar a
               usabilidade. O useEffect é uma ferramenta poderosa que ajuda a
               tornar os componentes do React mais dinâmicos e responsivos,
-              permitindo que eles realizem ações secundárias e se adaptem às
+              permitindo que eles realizem açÃµes secundárias e se adaptem Ã s
               mudanças no estado da aplicação. E o useState é uma ferramenta
               útil para gerenciar o estado interno de um componente funcional do
-              React. Ele é fácil de usar, flexível, garante atualizações de
+              React. Ele é fácil de usar, flexível, garante atualizaçÃµes de
               estado assíncronas e mantém o estado apenas no escopo local do
               componente.
             </li>
@@ -70,19 +68,19 @@ const ProjectPortfolio = () => {
             <br />
             <li style={{ listStyleType: "disc" }}>
               Também usamos o Toastify na página de envio de email para as
-              notificações. Em resumo, o Toastify é uma biblioteca React
-              flexível e personalizável que permite exibir notificações em um
+              notificaçÃµes. Em resumo, o Toastify é uma biblioteca React
+              flexível e personalizável que permite exibir notificaçÃµes em um
               aplicativo web. Ele é fácil de usar, responsivo, compatível com o
               React e oferece uma ampla gama de recursos de personalização. Com
               uma comunidade ativa de desenvolvedores, o Toastify é uma opção
-              viável para desenvolvedores que precisam exibir notificações em
+              viável para desenvolvedores que precisam exibir notificaçÃµes em
               seus aplicativos web.
             </li>
           </ul>
         </div>
         <div>
           <br />
-          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
+          <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>
           <YouTube
             videoId="hUJMJ2Ilh8w"
             opts={{
@@ -117,3 +115,5 @@ const ProjectPortfolio = () => {
 };
 
 export default ProjectPortfolio;
+
+

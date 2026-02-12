@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "../components/ProjectEcommerce.module.css";
 import { NavLink } from "react-router-dom";
-import Translate from "../components/Translate";
 import NewTab from "../assets/newtab.png";
 
 const ProjectNewTab = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto New Tab</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
@@ -19,14 +17,13 @@ const ProjectNewTab = () => {
               <strong>Next.js:</strong>
               <ul>
                 <li>
-                  Renderização Híbrida: Suporta renderização no servidor e
-                  geração de sites estáticos, melhorando o desempenho e a
-                  experiência do usuário.
+                  Renderização Híbrida: Suporta renderização no servidor e geração
+                  de sites estáticos, melhorando o desempenho e a experiência do
+                  usuário.
                 </li>
                 <li>
-                  Otimização Automática: Realiza divisão de código e
-                  carregamento sob demanda para tempos de carregamento mais
-                  rápidos.
+                  Otimização Automática: Realiza divisão de código e carregamento
+                  sob demanda para tempos de carregamento mais rápidos.
                 </li>
                 <li>
                   Roteamento Simplificado: O sistema de roteamento baseado em
@@ -42,12 +39,12 @@ const ProjectNewTab = () => {
                     <strong>Benefícios do LocalStorage:</strong>
                   </li>
                   <li>
-                    *Persistência: Armazena dados que permanecem após o
-                    fechamento do navegador.
+                    *Persistência: Armazena dados que permanecem após o fechamento
+                    do navegador.
                   </li>
                   <li>
-                    *Acesso Rápido: Dados acessados localmente, sem necessidade
-                    de requisições ao servidor.
+                    *Acesso Rápido: Dados acessados localmente, sem necessidade de
+                    requisições ao servidor.
                   </li>
                   <li>
                     *Simplicidade: Solução fácil de usar com uma API simples.

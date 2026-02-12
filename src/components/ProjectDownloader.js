@@ -4,7 +4,6 @@ import styles from "../components/ProjectEcommerce.module.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import zoom from "../assets/zoom.png";
-import Translate from "../components/Translate";
 
 const ProjectDownloader = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -20,7 +19,6 @@ const ProjectDownloader = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto Protótipo Downloader System</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
@@ -61,7 +59,7 @@ const ProjectDownloader = () => {
           </ul>
         </div>
         <div>
-          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
+          <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>
           <YouTube
             videoId="JGH-XdZWQyU"
             opts={{
@@ -95,3 +93,5 @@ const ProjectDownloader = () => {
 };
 
 export default ProjectDownloader;
+
+

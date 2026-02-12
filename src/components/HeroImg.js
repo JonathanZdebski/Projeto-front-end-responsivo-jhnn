@@ -4,27 +4,30 @@ import { Link } from "react-router-dom";
 
 function HeroImg() {
   return (
-    <div className={Styles.hero}>
+    <section className={Styles.hero}>
       <div className={Styles.mask}>
-        <img className={Styles.intoimg} src={coding} alt="IntroImg" />
+        <img className={Styles.intoimg} src={coding} alt="Codigo em um notebook" />
       </div>
+      <div className={Styles.gridOverlay} />
+
       <div className={Styles.content}>
-        <p>OLÁ, MEU NOME É JONATHAN</p>
+        <p className={Styles.eyebrow}>Ola, meu nome e Jonathan</p>
+
         <h1 className={Styles.title}>
-          Desenvolvedor Front-end com experiência em React.js, Next.js,
-          TypeScript e boas práticas de UI/UX.
+          Desenvolvedor Front-end com experiencia em React.js, Next.js,
+          TypeScript e boas praticas de UI/UX.
         </h1>
 
-        <div>
-          <Link to="/project" className="btn">
+        <div className={Styles.actions}>
+          <Link to="/project" className={`${Styles.cta} ${Styles.primary}`}>
             Projetos
           </Link>
-          <Link to="/contact" className="btn btn-light">
+          <Link to="/contact" className={`${Styles.cta} ${Styles.secondary}`}>
             Contato
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

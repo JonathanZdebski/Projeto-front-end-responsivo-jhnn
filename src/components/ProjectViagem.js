@@ -3,7 +3,6 @@ import YouTube from "react-youtube";
 import styles from "../components/ProjectEcommerce.module.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import Translate from "../components/Translate";
 
 const ProjectViagem = () => {
   const [, setPlayerId] = useState(null);
@@ -24,13 +23,12 @@ const ProjectViagem = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto Viagem Responsivo</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
           <ul className={styles.resumetext}>
             <li style={{ listStyleType: "disc" }}>
-              Utilizamos o React Router para fazer as navegações entre as
+              Utilizamos o React Router para fazer as navegaçÃµes entre as
               páginas. Permitindo gerenciar as rotas do aplicativo de maneira
               eficiente e fácil. Isso significa que as páginas do aplicativo
               podem ser exibidas com base no URL da página, tornando a navegação
@@ -55,17 +53,17 @@ const ProjectViagem = () => {
             <li style={{ listStyleType: "disc" }}>
               Utilizamos o AXIOS nas páginas de contato, login e registro para
               registrar os dados em JSON no db.json do projeto. Em resumo, o
-              axios é uma biblioteca JavaScript útil para fazer solicitações
-              HTTP a um servidor. Ele oferece suporte a todas as solicitações
+              axios é uma biblioteca JavaScript útil para fazer solicitaçÃµes
+              HTTP a um servidor. Ele oferece suporte a todas as solicitaçÃµes
               HTTP, é fácil de usar e pode ser configurado rapidamente. Além
-              disso, ele suporta interceptadores de solicitações e respostas,
-              promessas, cancelamento de solicitações.
+              disso, ele suporta interceptadores de solicitaçÃµes e respostas,
+              promessas, cancelamento de solicitaçÃµes.
             </li>
           </ul>
         </div>
         <div>
           <br />
-          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
+          <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>
           <YouTube
             videoId="8TnmOj5ZBjY"
             opts={{
@@ -100,3 +98,5 @@ const ProjectViagem = () => {
 };
 
 export default ProjectViagem;
+
+

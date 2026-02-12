@@ -4,7 +4,6 @@ import HeroImg from "../components/HeroImg";
 import Footer from "../components/Footer";
 import WorkHome from "../components/WorkHome";
 import BackToTopButton from "../components/BackToTopButton";
-import ButtonView from "../components/ButtonView";
 import PageTitle from "../components/PageTitle";
 
 function Home() {
@@ -14,7 +13,6 @@ function Home() {
       <Navbar />
       <HeroImg />
       <WorkHome />
-      <ButtonView />
       <BackToTopButton />
       <Footer />
     </div>

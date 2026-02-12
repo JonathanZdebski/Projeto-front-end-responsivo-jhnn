@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "../components/ProjectEcommerce.module.css";
 import { NavLink } from "react-router-dom";
-import Translate from "../components/Translate";
 import CarHub from "../assets/CarHub.png";
 
 const ProjectCarHub = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto CarHub</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
@@ -22,8 +20,8 @@ const ProjectCarHub = () => {
                   tornando o código mais seguro e robusto.
                 </li>
                 <li>
-                  Autocompletar e IntelliSense: Oferece sugestões de código e
-                  informações úteis em editores, facilitando o desenvolvimento e
+                  Autocompletar e IntelliSense: Oferece sugestÃµes de código e
+                  informaçÃµes úteis em editores, facilitando o desenvolvimento e
                   reduzindo erros.
                 </li>
                 <li>
@@ -86,7 +84,7 @@ const ProjectCarHub = () => {
             </li>
           </ul>
         </div>
-        <div style={{ marginTop: "-30px" }} className={styles.containerimg}>
+        <div className={styles.containerimg}>
           <img
             className={styles.zoomimg}
             src={CarHub}
@@ -116,3 +114,5 @@ const ProjectCarHub = () => {
 };
 
 export default ProjectCarHub;
+
+

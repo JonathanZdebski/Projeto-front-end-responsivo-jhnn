@@ -1,14 +1,12 @@
 import React from "react";
 import styles from "../components/ProjectEcommerce.module.css";
 import { NavLink } from "react-router-dom";
-import Translate from "../components/Translate";
 import UploadFilesDSPic from "../assets/uploadfilesds.png";
 
 const UploadFilesDS = () => {
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
-        <Translate />
         <div className={styles.title}>
           <h1>Projeto SaaS Upload Files DS</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
@@ -98,7 +96,7 @@ const UploadFilesDS = () => {
                 <li>
                   Banco de dados NoSQL que armazena dados em documentos JSON,
                   oferecendo flexibilidade na modelagem de dados e
-                  escalabilidade horizontal para aplicações modernas.
+                  escalabilidade horizontal para aplicaçÃÆ’µes modernas.
                 </li>
                 <br />
               </ul>
@@ -118,7 +116,7 @@ const UploadFilesDS = () => {
               <strong>ShadCN:</strong>
               <ul>
                 <li>
-                  Biblioteca de componentes UI com suporte a transições suaves e
+                  Biblioteca de componentes UI com suporte a transiçÃÆ’µes suaves e
                   estilos personalizáveis, facilitando a criação de interfaces
                   ricas e dinâmicas.
                 </li>
@@ -127,7 +125,7 @@ const UploadFilesDS = () => {
             </li>
           </ul>
         </div>
-        <div style={{ marginTop: "-50px" }} className={styles.containerimg}>
+        <div className={styles.containerimg}>
           <img
             className={styles.zoomimg}
             src={UploadFilesDSPic}
@@ -157,3 +155,6 @@ const UploadFilesDS = () => {
 };
 
 export default UploadFilesDS;
+
+
+
