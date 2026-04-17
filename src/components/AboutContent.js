@@ -1,8 +1,6 @@
 import Styles from "../components/AboutContent.module.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import React1 from "../assets/react1.jpg";
-import React2 from "../assets/react2.webp";
 
 function AboutContent() {
   return (
@@ -12,11 +10,31 @@ function AboutContent() {
           <p className={Styles.kicker}>Sobre mim</p>
           <h2>Quem sou</h2>
           <p className={Styles.description}>
-            Sou entusiasta de tecnologia desde os 12 anos, sempre curioso sobre
-            o funcionamento dos websites. Em 2018, tive a oportunidade de entrar
-            de vez no universo da programação. Desde então, sigo evoluindo com
-            dedicação, determinação e vontade constante de aprender e adquirir
-            novas experiências.
+            Desenvolvedor Web com foco em arquitetura, clareza, performance,
+            impacto real e IA.
+            <br />
+            <br />
+            Atuo na construção de aplicações pensando além da implementação:
+            entendo o problema, modelo o sistema e tomo decisões técnicas com
+            base em trade-offs, escalabilidade e experiência do usuário.
+            <br />
+            <br />
+            Tenho interesse especial em produtos digitais e sistemas bem
+            estruturados, com foco em soluções que simplificam a complexidade
+            {" — "}não aumentam.
+            <br />
+            <br />
+            Trabalho principalmente com Next.js, React, TypeScript, Firebase e
+            Supabase.
+            <br />
+            Desenvolvendo aplicações com autenticação, integração com APIs e
+            organização de estado, sempre priorizando código sustentável,
+            performance e evolução contínua.
+            <br />
+            <br />
+            Atualmente, também venho explorando a integração de IA em
+            aplicações, aplicando LLMs para tornar produtos mais inteligentes e
+            eficientes.
           </p>
 
           <div className={Styles.actions}>
@@ -33,17 +51,6 @@ function AboutContent() {
             </Link>
           </div>
         </article>
-
-        <aside className={Styles.right}>
-          <div className={Styles.imagecontainer}>
-            <div className={`${Styles.imgStack} ${Styles.top}`}>
-              <img src={React1} className={Styles.img} alt="Dashboard de projeto" />
-            </div>
-            <div className={`${Styles.imgStack} ${Styles.bottom}`}>
-              <img src={React2} className={Styles.img} alt="Interface de aplicação" />
-            </div>
-          </div>
-        </aside>
       </div>
     </section>
   );

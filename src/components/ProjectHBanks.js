@@ -46,7 +46,7 @@ const ProjectHBanks = () => {
             <br />
             <li style={{ listStyleType: "disc" }}>
               Flexibilidade: O ReactJS é uma biblioteca altamente flexível que
-              pode ser usada em diversas aplicaçÃµes. Já o Vite e o Tailwind CSS
+              pode ser usada em diversas aplicações. Já o Vite e o Tailwind CSS
               também são altamente personalizáveis e podem ser configurados de
               acordo com as necessidades de cada projeto. Isso permite que os
               desenvolvedores tenham mais liberdade para criar interfaces
@@ -72,7 +72,7 @@ const ProjectHBanks = () => {
         </div>
         <div>
           <br />
-          <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>
+          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
           <YouTube
             videoId="hfI4mqUs5T8"
             opts={{

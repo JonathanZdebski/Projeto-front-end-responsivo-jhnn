@@ -10,25 +10,36 @@ const ProjectWebsiteInstitucional = () => {
         <div className={styles.title}>
           <h1>Projeto Website Institucional</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
+
+          <div className={styles.summaryBlock}>
+            <h4 className={styles.summaryTitle}>Sobre o produto</h4>
+            <p className={styles.summaryText}>
+              Projeto desenvolvido com foco em design moderno, performance e
+              boas práticas de front-end.
+            </p>
+            <p className={styles.summaryText}>
+              O site apresenta uma estrutura institucional completa para uma
+              clínica veterinária, com seções informativas, layout responsivo e
+              experiência do usuário bem definida. Desenvolvido utilizando
+              Next.js, TypeScript e Tailwind CSS, priorizando componentização,
+              tipagem forte e otimização para SEO.
+            </p>
+          </div>
+
           <ul className={styles.resumetext}>
             <li style={{ listStyleType: "disc" }}>
-              <strong>Next.js:</strong> Estrutura moderna com rotas otimizadas,
-              renderização eficiente e bom desempenho para páginas
-              institucionais.
+              <strong>Tecnologias utilizadas:</strong> Next.js (App Router),
+              TypeScript, Tailwind CSS.
             </li>
             <br />
             <li style={{ listStyleType: "disc" }}>
-              <strong>TypeScript:</strong> Tipagem estática para maior
-              confiabilidade, manutenção simples e evolução segura do projeto.
-            </li>
-            <br />
-            <li style={{ listStyleType: "disc" }}>
-              <strong>Tailwind CSS:</strong> Estilização rápida e consistente
-              para interfaces modernas, responsivas e com boa identidade visual.
+              <strong>Finalidade do projeto:</strong> Prática de arquitetura
+              front-end moderna.
             </li>
             <br />
           </ul>
         </div>
+
         <div className={styles.containerimg}>
           <img
             className={styles.zoomimg}
@@ -37,6 +48,7 @@ const ProjectWebsiteInstitucional = () => {
             width={700}
           />
         </div>
+
         <div>
           <NavLink
             to="https://website-veterinaria.vercel.app/"
@@ -52,6 +64,3 @@ const ProjectWebsiteInstitucional = () => {
 };
 
 export default ProjectWebsiteInstitucional;
-
-
-

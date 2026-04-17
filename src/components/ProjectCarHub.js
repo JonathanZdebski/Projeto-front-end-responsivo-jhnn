@@ -20,8 +20,8 @@ const ProjectCarHub = () => {
                   tornando o código mais seguro e robusto.
                 </li>
                 <li>
-                  Autocompletar e IntelliSense: Oferece sugestÃµes de código e
-                  informaçÃµes úteis em editores, facilitando o desenvolvimento e
+                  Autocompletar e IntelliSense: Oferece sugestões de código e
+                  informações úteis em editores, facilitando o desenvolvimento e
                   reduzindo erros.
                 </li>
                 <li>

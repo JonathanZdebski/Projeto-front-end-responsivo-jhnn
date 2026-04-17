@@ -30,7 +30,7 @@ const ProjectEcommerce = () => {
           <ul className={styles.resumetext}>
             <li style={{ listStyleType: "disc" }}>
               Como citado no projeto de protótipo, recriamos o Downloader System
-              em NextJS e suas tecnologias. Para mais informaçÃµes sobre a ideia
+              em NextJS e suas tecnologias. Para mais informações sobre a ideia
               do projeto{" "}
               <Link
                 className={styles.Link}
@@ -51,7 +51,7 @@ const ProjectEcommerce = () => {
               que as páginas são pré-renderizadas no servidor antes de serem
               enviadas para o navegador. Isso melhora significativamente o tempo
               de carregamento da página e a experiência do usuário,
-              especialmente em dispositivos com conexÃµes de internet lentas.{" "}
+              especialmente em dispositivos com conexões de internet lentas.{" "}
               <br /> <br />
               <strong>Automatic Code Splitting: </strong> o Next.js faz o code
               splitting automaticamente, o que significa que o código é dividido
@@ -69,7 +69,7 @@ const ProjectEcommerce = () => {
             </li>
             <br />
             <li style={{ listStyleType: "disc" }}>
-              Também utilizamos o getStaticProps é uma das funçÃµes disponíveis
+              Também utilizamos o getStaticProps é uma das funções disponíveis
               no Next.js que permite a obtenção de dados em tempo de compilação.
               A principal vantagem de usar getStaticProps é que ele permite a
               pré-renderização de páginas estáticas com dados dinâmicos em tempo
@@ -97,7 +97,7 @@ const ProjectEcommerce = () => {
           </ul>
         </div>
         <div>
-          <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>
+          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
           <YouTube
             videoId="JGH-XdZWQyU"
             opts={{

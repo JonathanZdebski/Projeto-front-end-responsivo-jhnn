@@ -26,6 +26,26 @@ const ProjectOkrPlanner = () => {
         <div className={styles.title}>
           <h1>Projeto SaaS OKR Planner</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
+          <div className={styles.summaryBlock}>
+            <h4 className={styles.summaryTitle}>Sobre o produto</h4>
+            <p className={styles.summaryText}>
+              OKR Planner AI é um sistema de gestão de OKRs e metas, utilizado
+              por empresas de referência mundial, incluindo o Google, e adotado
+              amplamente no mercado corporativo.
+            </p>
+            <p className={styles.summaryText}>
+              Focado em equipes, desempenho e resultados, o sistema integra
+              inteligência artificial do GPT para ler, avaliar e gerar
+              relatórios sobre os objetivos e metas do seu time de forma rápida
+              e precisa, atendendo às solicitações do usuário.
+            </p>
+            <p className={styles.summaryText}>
+              A plataforma oferece funcionalidades como gerenciamento de
+              membros, acompanhamento de objetivos concluídos, organização por
+              times e a criação de um workspace exclusivo para sua empresa,
+              além de recursos impulsionados por IA.
+            </p>
+          </div>
 
           <ul className={styles.resumetext}>
             <li style={{ listStyleType: "disc" }}>
@@ -112,7 +132,7 @@ const ProjectOkrPlanner = () => {
           <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
           <br />
           <YouTube
-            videoId="WG4hl9TFOWw"
+            videoId="lR0oiqhYKfw"
             opts={{
               height: windowWidth < 640 ? "195" : "390",
               width: windowWidth < 640 ? "320" : "640",

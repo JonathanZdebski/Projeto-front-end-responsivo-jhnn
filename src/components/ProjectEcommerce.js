@@ -76,7 +76,7 @@ const ProjectEcommerce = () => {
               página de realização de compra e setar o cache após a compra do
               usuário. Resumindo o useEffect é uma ferramenta poderosa que ajuda
               a tornar os componentes do React mais dinâmicos e responsivos,
-              permitindo que eles realizem açÃµes secundárias e se adaptem Ã s
+              permitindo que eles realizem ações secundárias e se adaptem às
               mudanças no estado da aplicação.
             </li>
             <br />
@@ -106,7 +106,7 @@ const ProjectEcommerce = () => {
         </div>
         <div>
           <br />
-          <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>
+          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
           <YouTube
             videoId="cMbdd_1hLNA"
             opts={{

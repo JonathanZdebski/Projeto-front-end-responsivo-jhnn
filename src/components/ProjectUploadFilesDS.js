@@ -1,17 +1,48 @@
 import React from "react";
 import styles from "../components/ProjectEcommerce.module.css";
 import { NavLink } from "react-router-dom";
-import UploadFilesDSPic from "../assets/uploadfilesds.png";
+import YouTube from "react-youtube";
+import { useState, useEffect } from "react";
 
 const UploadFilesDS = () => {
+  const [, setPlayerId] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const onReady = (event) => {
+    setPlayerId(event.target.getIframe().id);
+  };
+
   return (
     <div className={styles.card}>
       <div className={styles.card2}>
         <div className={styles.title}>
           <h1>Projeto SaaS Upload Files DS</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
+          <div className={styles.summaryBlock}>
+            <h4 className={styles.summaryTitle}>Sobre o produto</h4>
+            <p className={styles.summaryText}>
+              O projeto consiste em um site para upload de imagens, permitindo
+              o envio de uma única imagem, múltiplas imagens ou diversos tipos
+              de arquivos. Todo o conteúdo enviado é armazenado na nuvem e
+              disponibilizado por meio de um link.
+            </p>
+            <p className={styles.summaryText}>
+              O Upload Files DS possibilita o compartilhamento rápido e simples
+              de arquivos, sem complicações. O projeto foi desenvolvido com
+              foco em usabilidade, experiência intuitiva, design agradável e
+              facilidade para o usuário.
+            </p>
+          </div>
+
           <ul className={styles.resumetext}>
-            <br />
             <li style={{ listStyleType: "disc" }}>
               <strong>Google Analytics:</strong>
               <ul>
@@ -96,7 +127,7 @@ const UploadFilesDS = () => {
                 <li>
                   Banco de dados NoSQL que armazena dados em documentos JSON,
                   oferecendo flexibilidade na modelagem de dados e
-                  escalabilidade horizontal para aplicaçÃÆ’µes modernas.
+                  escalabilidade horizontal para aplicações modernas.
                 </li>
                 <br />
               </ul>
@@ -116,7 +147,7 @@ const UploadFilesDS = () => {
               <strong>ShadCN:</strong>
               <ul>
                 <li>
-                  Biblioteca de componentes UI com suporte a transiçÃÆ’µes suaves e
+                  Biblioteca de componentes UI com suporte a transições suaves e
                   estilos personalizáveis, facilitando a criação de interfaces
                   ricas e dinâmicas.
                 </li>
@@ -125,14 +156,23 @@ const UploadFilesDS = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.containerimg}>
-          <img
-            className={styles.zoomimg}
-            src={UploadFilesDSPic}
-            alt="UploadFilesDSPic"
-            width={600}
+
+        <div>
+          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
+          <br />
+          <YouTube
+            videoId="JR4DU4iRFjQ"
+            opts={{
+              height: windowWidth < 640 ? "195" : "390",
+              width: windowWidth < 640 ? "320" : "640",
+              playerVars: {
+                autoplay: 0,
+              },
+            }}
+            onReady={onReady}
           />
         </div>
+
         <div>
           <NavLink
             to="https://upload-files-ds.vercel.app/"
@@ -155,6 +195,3 @@ const UploadFilesDS = () => {
 };
 
 export default UploadFilesDS;
-
-
-

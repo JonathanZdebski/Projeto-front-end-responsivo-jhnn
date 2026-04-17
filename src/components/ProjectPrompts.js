@@ -41,9 +41,9 @@ const ProjectEcommerce = () => {
             <li style={{ listStyleType: "disc" }}>
               O diretório pages router usa getServerSideProps e getStaticProps
               para buscar dados para páginas. Dentro do diretório app, essas
-              funçÃµes anteriores de busca de dados são substituídas por uma API
+              funções anteriores de busca de dados são substituídas por uma API
               mais simples construída sobre fetch() e componentes de servidor
-              React assíncronos. Mais informaçÃµes na{" "}
+              React assíncronos. Mais informações na{" "}
               <Link
                 to="https://nextjs.org/docs/app/building-your-application/upgrading/app-router-migration"
                 className={styles.Link}
@@ -74,14 +74,14 @@ const ProjectEcommerce = () => {
             <li style={{ listStyleType: "disc" }}>
               Aplicamos o CRUD no projeto que oferece facilidade de
               implementação, integração com APIs, pré-renderização otimizada,
-              roteamento avançado, atualizaçÃµes em tempo real e benefícios de
+              roteamento avançado, atualizações em tempo real e benefícios de
               escalabilidade e desempenho. Essas vantagens combinadas ajudam a
-              criar aplicaçÃµes robustas, eficientes e com uma ótima experiência
+              criar aplicações robustas, eficientes e com uma ótima experiência
               de usuário.
             </li>
             <br />
             <li style={{ listStyleType: "disc" }}>
-              O App Router do Next.js oferece várias vantagens nas aplicaçÃµes.
+              O App Router do Next.js oferece várias vantagens nas aplicações.
               Ele fornece um sistema de roteamento avançado, permitindo criar
               rotas estáticas, dinâmicas e com parâmetros de forma simples. Além
               disso, suporta a pré-renderização otimizada, melhorando o
@@ -90,10 +90,10 @@ const ProjectEcommerce = () => {
               reduzido. O suporte ao roteamento no lado do servidor possibilita
               a execução de lógica personalizada durante a renderização do
               servidor. O App Router atual também facilita a migração de
-              aplicaçÃµes existentes e faz parte de um ecossistema ativo, com
+              aplicações existentes e faz parte de um ecossistema ativo, com
               suporte e recursos adicionais disponíveis. Essas vantagens tornam
               o App Router do Next.js uma escolha poderosa para lidar com o
-              roteamento em aplicaçÃµes Next.js.
+              roteamento em aplicações Next.js.
             </li>
             <br />
             <li style={{ listStyleType: "disc" }}>
@@ -107,7 +107,7 @@ const ProjectEcommerce = () => {
           <div>
             <br />
             <br />
-            <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>
+            <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
             <YouTube
               videoId="OcTpCrCLzbM"
               opts={{

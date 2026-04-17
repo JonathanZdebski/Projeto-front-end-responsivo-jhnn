@@ -26,14 +26,31 @@ const ProjectEdicaoDireta = () => {
         <div className={styles.title}>
           <h1>Projeto SaaS Edição Direta</h1>
           <h3 className={styles.resumetext2}>Detalhes:</h3>
+          <div className={styles.summaryBlock}>
+            <h4 className={styles.summaryTitle}>Sobre o produto</h4>
+            <p className={styles.summaryText}>
+              O projeto consiste em um site de comércio com catálogo de
+              produtos, voltado tanto para o usuário final quanto para o
+              administrador. Nele, é possível editar praticamente todo o
+              conteúdo do site por meio de botões dedicados à edição e
+              modificação. Trata-se de uma plataforma moderna, intuitiva e com
+              design agradável, que conta com um painel administrativo para
+              adicionar ou remover administradores.
+            </p>
+            <p className={styles.summaryText}>
+              O grande diferencial é que não há necessidade de contatar o
+              desenvolvedor para realizar alterações, tornando o processo de
+              edição simples, rápido e independente.
+            </p>
+          </div>
 
           <ul className={styles.resumetext}>
             <li style={{ listStyleType: "disc" }}>
               <strong>Next.js:</strong> <br />
               Framework React moderno que oferece SSR, SSG e rotas otimizadas.
-              Facilita a criação de aplicaçÃµes rápidas, escaláveis e com
+              Facilita a criação de aplicações rápidas, escaláveis e com
               excelente desempenho, além de melhorar significativamente o SEO e
-              fornecer otimizaçÃµes automáticas de build.
+              fornecer otimizações automáticas de build.
             </li>
             <br />
             <li style={{ listStyleType: "disc" }}>
@@ -95,7 +112,7 @@ const ProjectEdicaoDireta = () => {
         </div>
 
         <div>
-          <h3 className={styles.apres}>APRESENTAÃ‡ÃÆ’O DO PROJETO EM VÃDEO:</h3>{" "}
+          <h3 className={styles.apres}>APRESENTAÇÃO DO PROJETO EM VÍDEO:</h3>
           <br />
           <YouTube
             videoId="KSnbcuelAfQ"
@@ -125,5 +142,3 @@ const ProjectEdicaoDireta = () => {
 };
 
 export default ProjectEdicaoDireta;
-
-

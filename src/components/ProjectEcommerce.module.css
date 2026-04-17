@@ -1,4 +1,4 @@
-.card {
+﻿.card {
   position: relative;
   width: 100%;
   padding: 2.4rem 1rem 2rem;
@@ -88,8 +88,39 @@
   color: #bae6fd;
 }
 
-.title .resumetext {
+.summaryBlock {
   order: 5;
+  margin: 0 auto 1.2rem;
+  width: 100%;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(9, 14, 26, 0.58);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.summaryTitle {
+  margin: 0 0 0.65rem;
+  text-align: left;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #bae6fd;
+}
+
+.summaryText {
+  margin: 0;
+  color: #dbe6f7;
+  text-align: left;
+  line-height: 1.62;
+}
+
+.summaryText + .summaryText {
+  margin-top: 0.75rem;
+}
+
+.title .resumetext {
+  order: 6;
   margin: 0;
   padding: 0;
   color: #e5ecf8;
@@ -320,3 +351,4 @@
     animation: none;
   }
 }
+

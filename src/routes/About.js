@@ -13,7 +13,7 @@ function About() {
 
       <HImage2
         heading="ABOUT."
-        text="Desenvolvedor Front-end focado em criar experiências digitais modernas e acessíveis."
+        text="Desenvolvedor Web focado em criar experiências digitais modernas e acessíveis."
       />
       <AboutContent />
       <Footer />

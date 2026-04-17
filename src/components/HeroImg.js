@@ -14,8 +14,8 @@ function HeroImg() {
         <p className={Styles.eyebrow}>Ola, meu nome e Jonathan</p>
 
         <h1 className={Styles.title}>
-          Desenvolvedor Front-end com experiencia em React.js, Next.js,
-          TypeScript e boas praticas de UI/UX.
+          Desenvolvedor Web com foco em React.js, Next.js, TypeScript, UI/UX, e
+          IA aplicada a produtos digitais.
         </h1>
 
         <div className={Styles.actions}>
