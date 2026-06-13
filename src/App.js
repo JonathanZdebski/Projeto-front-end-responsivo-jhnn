@@ -19,6 +19,7 @@ import UploadFilesDS from "./routes/Projects/ProjectUploadFilesDS";
 import ProjectOkrPlanner from "./routes/Projects/ProjectOkrPlanner";
 import ProjectEDireta from "./routes/Projects/ProjectEdicaoDireta";
 import ProjectWebsiteInstitucionalRoute from "./routes/Projects/ProjectWebsiteInstitucional";
+import ProjectAiModelLearnRoute from "./routes/Projects/ProjectAiModelLearn";
 
 function App() {
   return (
@@ -43,6 +44,10 @@ function App() {
         <Route path="/projeto-uploadfilesds" element={<UploadFilesDS />} />
         <Route path="/projeto-edicao-direta" element={<ProjectEDireta />} />
         <Route path="/projeto-okr-planner" element={<ProjectOkrPlanner />} />
+        <Route
+          path="/projeto-ai-model-learn"
+          element={<ProjectAiModelLearnRoute />}
+        />
         <Route
           path="/projeto-website-institucional"
           element={<ProjectWebsiteInstitucionalRoute />}

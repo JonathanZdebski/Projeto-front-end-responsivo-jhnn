@@ -10,8 +10,18 @@ import uploadfilesds from "../assets/uploadfilesds.png";
 import DraCamilaImg from "../assets/DraCamilaImg.png";
 import ed from "../assets/ed.png";
 import okr from "../assets/okr.png";
+import aiModelLearn from "../assets/aimodellearn.png";
 
 const ProjectCardData = [
+  {
+    id: 15,
+    imgsrc: aiModelLearn,
+    title: "Projeto SaaS AI Model Learn",
+    text: "Tecnologias: Next.js, Typescript, Supabase, Tailwind CSS, NextAuth v5, Framer-motion, Google Search Console SEO, Shadcn/UI",
+    view: "/projeto-ai-model-learn",
+    isNew: true,
+    isSaaS: true,
+  },
   {
     id: 13,
     imgsrc: okr,
