@@ -145,7 +145,7 @@ const ProjectOkrPlanner = () => {
         </div>
         <div>
           <NavLink
-            to="https://www.okrplanner.com/"
+            to="https://okr-planner-rho.vercel.app/"
             target="_blank"
             className={`${styles.btnwd} ${styles.web}`}
           >
